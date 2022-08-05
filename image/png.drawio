@@ -1,0 +1,39 @@
+<mxfile host="65bd71144e">
+    <diagram id="7jTHIjX82u3BAVChfti1" name="第 1 页">
+        <mxGraphModel dx="1731" dy="312" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="7" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="-760" y="100" width="260" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="7">
+                    <mxGeometry width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="7">
+                    <mxGeometry y="60" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="MprpcApplication::Init" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="7">
+                    <mxGeometry y="27" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="NbX5GDaHZ68JRUSEGmEj-8" value="加载配置文件" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="7">
+                    <mxGeometry x="14" y="3" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="NbX5GDaHZ68JRUSEGmEj-9" value="NotifyService(Service*)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="7">
+                    <mxGeometry x="14" y="80" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="NbX5GDaHZ68JRUSEGmEj-10" value="加载配置文件" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="7">
+                    <mxGeometry x="30" y="110" width="80" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="b5B-SxRUhjf5XCYx5qah" name="第 2 页">
+        <mxGraphModel dx="316" dy="265" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="hbeVZSDqu3zfkARuzk0b-0"/>
+                <mxCell id="hbeVZSDqu3zfkARuzk0b-1" parent="hbeVZSDqu3zfkARuzk0b-0"/>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

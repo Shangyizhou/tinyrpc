@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/shang/code/C++/github/tinyrpc/build/src",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/shang/code/C++/github/tinyrpc/src/include -I/home/shang/code/C++/github/tinyrpc/example  -g   -o CMakeFiles/mprpc.dir/mprpc_application.cc.o -c /home/shang/code/C++/github/tinyrpc/src/mprpc_application.cc",
+  "file": "/home/shang/code/C++/github/tinyrpc/src/mprpc_application.cc"
+},
+{
+  "directory": "/home/shang/code/C++/github/tinyrpc/build/src",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/shang/code/C++/github/tinyrpc/src/include -I/home/shang/code/C++/github/tinyrpc/example  -g   -o CMakeFiles/mprpc.dir/mprpc_config.cc.o -c /home/shang/code/C++/github/tinyrpc/src/mprpc_config.cc",
+  "file": "/home/shang/code/C++/github/tinyrpc/src/mprpc_config.cc"
+},
+{
+  "directory": "/home/shang/code/C++/github/tinyrpc/build/src",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/shang/code/C++/github/tinyrpc/src/include -I/home/shang/code/C++/github/tinyrpc/example  -g   -o CMakeFiles/mprpc.dir/mprpc_provider.cc.o -c /home/shang/code/C++/github/tinyrpc/src/mprpc_provider.cc",
+  "file": "/home/shang/code/C++/github/tinyrpc/src/mprpc_provider.cc"
+},
+{
+  "directory": "/home/shang/code/C++/github/tinyrpc/build/src",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/shang/code/C++/github/tinyrpc/src/include -I/home/shang/code/C++/github/tinyrpc/example  -g   -o CMakeFiles/mprpc.dir/rpc_header.pb.cc.o -c /home/shang/code/C++/github/tinyrpc/src/rpc_header.pb.cc",
+  "file": "/home/shang/code/C++/github/tinyrpc/src/rpc_header.pb.cc"
+},
+{
+  "directory": "/home/shang/code/C++/github/tinyrpc/build/src",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/shang/code/C++/github/tinyrpc/src/include -I/home/shang/code/C++/github/tinyrpc/example  -g   -o CMakeFiles/mprpc.dir/mprpc_channel.cc.o -c /home/shang/code/C++/github/tinyrpc/src/mprpc_channel.cc",
+  "file": "/home/shang/code/C++/github/tinyrpc/src/mprpc_channel.cc"
+},
+{
+  "directory": "/home/shang/code/C++/github/tinyrpc/build/example/callee",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/shang/code/C++/github/tinyrpc/src/include -I/home/shang/code/C++/github/tinyrpc/example  -g   -o CMakeFiles/provider.dir/user_service.cc.o -c /home/shang/code/C++/github/tinyrpc/example/callee/user_service.cc",
+  "file": "/home/shang/code/C++/github/tinyrpc/example/callee/user_service.cc"
+},
+{
+  "directory": "/home/shang/code/C++/github/tinyrpc/build/example/callee",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/shang/code/C++/github/tinyrpc/src/include -I/home/shang/code/C++/github/tinyrpc/example  -g   -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/shang/code/C++/github/tinyrpc/example/user.pb.cc",
+  "file": "/home/shang/code/C++/github/tinyrpc/example/user.pb.cc"
+},
+{
+  "directory": "/home/shang/code/C++/github/tinyrpc/build/example/caller",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/shang/code/C++/github/tinyrpc/src/include -I/home/shang/code/C++/github/tinyrpc/example  -g   -o CMakeFiles/consumer.dir/call_user_service.cc.o -c /home/shang/code/C++/github/tinyrpc/example/caller/call_user_service.cc",
+  "file": "/home/shang/code/C++/github/tinyrpc/example/caller/call_user_service.cc"
+},
+{
+  "directory": "/home/shang/code/C++/github/tinyrpc/build/example/caller",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I/home/shang/code/C++/github/tinyrpc/src/include -I/home/shang/code/C++/github/tinyrpc/example  -g   -o CMakeFiles/consumer.dir/__/user.pb.cc.o -c /home/shang/code/C++/github/tinyrpc/example/user.pb.cc",
+  "file": "/home/shang/code/C++/github/tinyrpc/example/user.pb.cc"
+}
+]

@@ -1,0 +1,31 @@
+syntax = "proto3"; // 声明了protobuf的版本
+
+package fixbug; // 声明了代码所在的包，C++没有包管理，这相当于namespace
+
+// 定义下面的选项，表示生成service服务类和rpc方法描述，默认不生成
+option cc_generic_services = true;
+
+message EchoRequest {
+	string message = 1;
+}
+
+message EchoResponse {
+	string message = 1;
+}
+
+message AddRequest {
+	int32 a = 1;
+	int32 b = 2;
+}
+
+message AddResponse {
+	int32 result = 1;
+}
+
+// rpc生成接口类，包括两个方法 
+service EchoService {
+	rpc Echo(EchoRequest) returns(EchoResponse);
+	rpc Add(AddRequest) returns(AddResponse);
+}
+
+// protoc echo_service.proto -I./ --cpp_out=./
