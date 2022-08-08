@@ -206,6 +206,33 @@ mprpc_config.cc.s:
 	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_config.cc.s
 .PHONY : mprpc_config.cc.s
 
+mprpc_controller.o: mprpc_controller.cc.o
+
+.PHONY : mprpc_controller.o
+
+# target to build an object file
+mprpc_controller.cc.o:
+	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o
+.PHONY : mprpc_controller.cc.o
+
+mprpc_controller.i: mprpc_controller.cc.i
+
+.PHONY : mprpc_controller.i
+
+# target to preprocess a source file
+mprpc_controller.cc.i:
+	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cc.i
+.PHONY : mprpc_controller.cc.i
+
+mprpc_controller.s: mprpc_controller.cc.s
+
+.PHONY : mprpc_controller.s
+
+# target to generate assembly for a file
+mprpc_controller.cc.s:
+	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cc.s
+.PHONY : mprpc_controller.cc.s
+
 mprpc_provider.o: mprpc_provider.cc.o
 
 .PHONY : mprpc_provider.o
@@ -260,6 +287,33 @@ rpc_header.pb.cc.s:
 	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.s
 .PHONY : rpc_header.pb.cc.s
 
+zookeeper_util.o: zookeeper_util.cc.o
+
+.PHONY : zookeeper_util.o
+
+# target to build an object file
+zookeeper_util.cc.o:
+	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o
+.PHONY : zookeeper_util.cc.o
+
+zookeeper_util.i: zookeeper_util.cc.i
+
+.PHONY : zookeeper_util.i
+
+# target to preprocess a source file
+zookeeper_util.cc.i:
+	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeper_util.cc.i
+.PHONY : zookeeper_util.cc.i
+
+zookeeper_util.s: zookeeper_util.cc.s
+
+.PHONY : zookeeper_util.s
+
+# target to generate assembly for a file
+zookeeper_util.cc.s:
+	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeper_util.cc.s
+.PHONY : zookeeper_util.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -278,12 +332,18 @@ help:
 	@echo "... mprpc_config.o"
 	@echo "... mprpc_config.i"
 	@echo "... mprpc_config.s"
+	@echo "... mprpc_controller.o"
+	@echo "... mprpc_controller.i"
+	@echo "... mprpc_controller.s"
 	@echo "... mprpc_provider.o"
 	@echo "... mprpc_provider.i"
 	@echo "... mprpc_provider.s"
 	@echo "... rpc_header.pb.o"
 	@echo "... rpc_header.pb.i"
 	@echo "... rpc_header.pb.s"
+	@echo "... zookeeper_util.o"
+	@echo "... zookeeper_util.i"
+	@echo "... zookeeper_util.s"
 .PHONY : help
 
 

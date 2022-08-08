@@ -45,6 +45,12 @@ google/protobuf/port_undef.inc
 ../src/include/mprpc_application.h
 mprpc_config.h
 ../src/include/mprpc_config.h
+mprpc_channel.h
+../src/include/mprpc_channel.h
+mprpc_controller.h
+../src/include/mprpc_controller.h
+zookeeper_util.h
+../src/include/zookeeper_util.h
 
 ../src/include/mprpc_channel.h
 google/protobuf/service.h
@@ -55,9 +61,25 @@ google/protobuf/message.h
 -
 mprpc_application.h
 ../src/include/mprpc_application.h
+mprpc_controller.h
+../src/include/mprpc_controller.h
 
 ../src/include/mprpc_config.h
 unordered_map
+-
+string
+-
+
+../src/include/mprpc_controller.h
+google/protobuf/service.h
+-
+string
+-
+
+../src/include/zookeeper_util.h
+semaphore.h
+-
+zookeeper/zookeeper.h
 -
 string
 -
@@ -71,6 +93,8 @@ user.pb.h
 /home/shang/code/C++/github/tinyrpc/example/caller/user.pb.h
 mprpc_channel.h
 /home/shang/code/C++/github/tinyrpc/example/caller/mprpc_channel.h
+mprpc_controller.h
+/home/shang/code/C++/github/tinyrpc/example/caller/mprpc_controller.h
 
 /home/shang/code/C++/github/tinyrpc/example/user.pb.cc
 user.pb.h

@@ -1,6 +1,7 @@
 #include <muduo/net/TcpClient.h>
 #include <string>
 #include "mprpc_channel.h"
+#include "mprpc_controller.h"
 #include "rpc_header.pb.h"
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -33,7 +34,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     }
     else
     {
-        std::cout << "Serialize request error!" << std::endl;
+        controller->SetFailed("serialize request error!");
         return;
     }
 
@@ -79,10 +80,29 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
         return;
     }
 
-    // 读取配置文件的信息
-    std::string ip = MprpcApplication::GetInstance().GetConfig().Load("rpc_server_ip");
-    uint16_t port = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpc_server_port").c_str());
-    
+    // 读取配置文件rpcserver的信息
+    // std::string ip = MprpcApplication::GetInstance().GetConfig().Load("rpcserverip");
+    // uint16_t port = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
+    // rpc调用方想调用service_name的method_name服务，需要查询zk上该服务所在的host信息
+    ZkClient zkCli;
+    zkCli.Start();
+    std::string method_path = "/" + service_name + "/" + method_name;
+    // 127.0.0.1:8000
+    std::string host_data = zkCli.GetData(method_path.c_str());
+    if (host_data == "")
+    {
+        controller->SetFailed(method_path + " is not exist!");
+        return;
+    }
+    int idx = host_data.find(":");
+    if (idx == -1)
+    {
+        controller->SetFailed(method_path + " address is invalid!");
+        return;
+    }
+    std::string ip = host_data.substr(0, idx);
+    uint16_t port = atoi(host_data.substr(idx+1, host_data.size()-idx).c_str()); 
+
     struct sockaddr_in server_addr;
     server_addr.sin_family = AF_INET;
     server_addr.sin_port = htons(port);
@@ -121,7 +141,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     }
 
     std::string response_str(recv_buf, 0, recv_size);
-    if (!response->ParseFromString(response_str)) // TODO:使用Array而不是String
+    if (!response->ParseFromArray(recv_buf, recv_size)) // TODO:使用Array而不是String
     {
         close(clientfd);
         char errtxt[512] = {0};
@@ -130,4 +150,5 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
         return;
     }
 
+    close(clientfd);
 }

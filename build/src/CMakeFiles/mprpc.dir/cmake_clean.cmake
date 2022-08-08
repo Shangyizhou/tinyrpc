@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mprpc.dir/mprpc_provider.cc.o"
   "CMakeFiles/mprpc.dir/rpc_header.pb.cc.o"
   "CMakeFiles/mprpc.dir/mprpc_channel.cc.o"
+  "CMakeFiles/mprpc.dir/mprpc_controller.cc.o"
+  "CMakeFiles/mprpc.dir/zookeeper_util.cc.o"
   "../../lib/libmprpc.pdb"
   "../../lib/libmprpc.a"
 )

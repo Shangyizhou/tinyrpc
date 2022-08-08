@@ -24,7 +24,7 @@ void MprpcProvider::NotifyService(google::protobuf::Service *service)
         // 获取了服务对象指定下标的服务方法的描述
         const google::protobuf::MethodDescriptor* pmethodDesc = pserviceDesc->method(i);
         std::string method_name = pmethodDesc->name();
-        service_info.m_mthodMap.insert({method_name, pmethodDesc});
+        service_info.m_methodMap.insert({method_name, pmethodDesc});
         std::cout << "method_name:" << method_name << std::endl;
     }
     std::cout << "=========================================" << std::endl;
@@ -49,6 +49,29 @@ void MprpcProvider::Run()
     server.setConnectionCallback(std::bind(&MprpcProvider::OnConnection, this, std::placeholders::_1));
     server.setMessageCallback(std::bind(&MprpcProvider::OnMessage, this, std::placeholders::_1, 
             std::placeholders::_2, std::placeholders::_3));
+
+    // 把当前rpc节点上要发布的服务全部注册到zk上面，让rpc client可以从zk上发现服务
+    // session timeout   30s     zkclient 网络I/O线程  1/3 * timeout 时间发送ping消息
+    ZkClient zkCli;
+    zkCli.Start();
+    // service_name为永久性节点    method_name为临时性节点
+    for (auto &sp : m_serviceMap) 
+    {
+        // /service_name   /UserServiceRpc
+        std::string service_path = "/" + sp.first;
+        zkCli.Create(service_path.c_str(), nullptr, 0);
+        for (auto &mp : sp.second.m_methodMap)
+        {
+            // /service_name/method_name   /UserServiceRpc/Login 存储当前这个rpc服务节点主机的ip和port
+            std::string method_path = service_path + "/" + mp.first;
+            char method_path_data[128] = {0};
+            sprintf(method_path_data, "%s:%d", ip.c_str(), 2181);
+            // ZOO_EPHEMERAL表示znode是一个临时性节点
+            zkCli.Create(method_path.c_str(), method_path_data, strlen(method_path_data), ZOO_EPHEMERAL);
+        }
+    }
+    
+    std::cout << "RpcProvider start service at ip:" << ip << " port:" << port << std::endl;
 
     // 启动网络服务
     server.start();
@@ -121,8 +144,8 @@ void MprpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn,
         std::cout << service_name << " is not exist!" << std::endl;
     }
 
-    auto mit = it->second.m_mthodMap.find(method_name);
-    if (mit == it->second.m_mthodMap.end())
+    auto mit = it->second.m_methodMap.find(method_name);
+    if (mit == it->second.m_methodMap.end())
     {
         std::cout << service_name << ":" << method_name << " is not exist!" << std::endl;
         return;

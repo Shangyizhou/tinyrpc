@@ -7,8 +7,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/shang/code/C++/github/tinyrpc/src/mprpc_application.cc" "/home/shang/code/C++/github/tinyrpc/build/src/CMakeFiles/mprpc.dir/mprpc_application.cc.o"
   "/home/shang/code/C++/github/tinyrpc/src/mprpc_channel.cc" "/home/shang/code/C++/github/tinyrpc/build/src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o"
   "/home/shang/code/C++/github/tinyrpc/src/mprpc_config.cc" "/home/shang/code/C++/github/tinyrpc/build/src/CMakeFiles/mprpc.dir/mprpc_config.cc.o"
+  "/home/shang/code/C++/github/tinyrpc/src/mprpc_controller.cc" "/home/shang/code/C++/github/tinyrpc/build/src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o"
   "/home/shang/code/C++/github/tinyrpc/src/mprpc_provider.cc" "/home/shang/code/C++/github/tinyrpc/build/src/CMakeFiles/mprpc.dir/mprpc_provider.cc.o"
   "/home/shang/code/C++/github/tinyrpc/src/rpc_header.pb.cc" "/home/shang/code/C++/github/tinyrpc/build/src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o"
+  "/home/shang/code/C++/github/tinyrpc/src/zookeeper_util.cc" "/home/shang/code/C++/github/tinyrpc/build/src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

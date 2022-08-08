@@ -32,7 +32,7 @@ private:
         // 保存服务对象
         google::protobuf::Service *m_service;
         // 保存服务方法
-        std::unordered_map<std::string, const google::protobuf::MethodDescriptor*> m_mthodMap;
+        std::unordered_map<std::string, const google::protobuf::MethodDescriptor*> m_methodMap;
     };
     // 存储注册成功的服务对象和器服务方法的所以信息
     std::unordered_map<std::string, ServiceInfo> m_serviceMap;

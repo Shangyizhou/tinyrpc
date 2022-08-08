@@ -45,9 +45,33 @@ google/protobuf/port_undef.inc
 ../src/include/mprpc_application.h
 mprpc_config.h
 ../src/include/mprpc_config.h
+mprpc_channel.h
+../src/include/mprpc_channel.h
+mprpc_controller.h
+../src/include/mprpc_controller.h
+zookeeper_util.h
+../src/include/zookeeper_util.h
+
+../src/include/mprpc_channel.h
+google/protobuf/service.h
+-
+google/protobuf/descriptor.h
+-
+google/protobuf/message.h
+-
+mprpc_application.h
+../src/include/mprpc_application.h
+mprpc_controller.h
+../src/include/mprpc_controller.h
 
 ../src/include/mprpc_config.h
 unordered_map
+-
+string
+-
+
+../src/include/mprpc_controller.h
+google/protobuf/service.h
 -
 string
 -
@@ -68,6 +92,14 @@ muduo/net/EventLoop.h
 muduo/net/InetAddress.h
 -
 
+../src/include/zookeeper_util.h
+semaphore.h
+-
+zookeeper/zookeeper.h
+-
+string
+-
+
 /home/shang/code/C++/github/tinyrpc/example/callee/user_service.cc
 iostream
 -
@@ -81,6 +113,8 @@ mprpc_provider.h
 /home/shang/code/C++/github/tinyrpc/example/callee/mprpc_provider.h
 mprpc_config.h
 /home/shang/code/C++/github/tinyrpc/example/callee/mprpc_config.h
+mprpc_controller.h
+/home/shang/code/C++/github/tinyrpc/example/callee/mprpc_controller.h
 
 /home/shang/code/C++/github/tinyrpc/example/user.pb.cc
 user.pb.h

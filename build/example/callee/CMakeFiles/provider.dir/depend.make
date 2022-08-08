@@ -6,7 +6,10 @@ example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: ../example/user.pb.h
 
 example/callee/CMakeFiles/provider.dir/user_service.cc.o: ../example/user.pb.h
 example/callee/CMakeFiles/provider.dir/user_service.cc.o: ../src/include/mprpc_application.h
+example/callee/CMakeFiles/provider.dir/user_service.cc.o: ../src/include/mprpc_channel.h
 example/callee/CMakeFiles/provider.dir/user_service.cc.o: ../src/include/mprpc_config.h
+example/callee/CMakeFiles/provider.dir/user_service.cc.o: ../src/include/mprpc_controller.h
 example/callee/CMakeFiles/provider.dir/user_service.cc.o: ../src/include/mprpc_provider.h
+example/callee/CMakeFiles/provider.dir/user_service.cc.o: ../src/include/zookeeper_util.h
 example/callee/CMakeFiles/provider.dir/user_service.cc.o: ../example/callee/user_service.cc
 

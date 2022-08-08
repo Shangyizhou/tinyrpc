@@ -4,6 +4,8 @@
 #include "mprpc_application.h"
 #include "mprpc_provider.h"
 #include "mprpc_config.h"
+#include "mprpc_controller.h"
+
 
 // 一个本地服务，现在要将它变成rpc服务
 class UserService : public fixbug::UserServiceRpc // rpc服务提供者
@@ -13,6 +15,12 @@ public:
     {
         std::cout << "doing local service: Login" << std::endl;
         std::cout << "name:" << name << " pwd:" << pwd << std::endl;
+    }
+
+    bool Register(uint32_t id, std::string name, std::string pwd)
+    {
+        std::cout << "doing local service: Register" << std::endl;
+        std::cout << "id" << id << "name:" << name << " pwd:" << pwd << std::endl;
     }
 
     // 重写 fixbug::UserServiceRpc::Login 方法
@@ -41,6 +49,24 @@ public:
 
         // 执行回调操作
         // hi行响应对象数据的序列化和网络发送
+        done->Run();
+    }
+
+    void Register(::google::protobuf::RpcController* controller,
+                const ::fixbug::RegisterRequest* request,
+                ::fixbug::RegisterResponse* response,
+                ::google::protobuf::Closure* done)
+    {
+        uint32_t id = request->id();
+        std::string name = request->name();
+        std::string pwd = request->pwd();
+
+        bool ret = Register(id, name, pwd);
+
+        response->mutable_result()->set_errcode(0);
+        response->mutable_result()->set_errmsg("");
+        response->set_success(ret);
+
         done->Run();
     }
 

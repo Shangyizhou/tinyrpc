@@ -8,5 +8,7 @@ example/caller/CMakeFiles/consumer.dir/call_user_service.cc.o: ../example/user.p
 example/caller/CMakeFiles/consumer.dir/call_user_service.cc.o: ../src/include/mprpc_application.h
 example/caller/CMakeFiles/consumer.dir/call_user_service.cc.o: ../src/include/mprpc_channel.h
 example/caller/CMakeFiles/consumer.dir/call_user_service.cc.o: ../src/include/mprpc_config.h
+example/caller/CMakeFiles/consumer.dir/call_user_service.cc.o: ../src/include/mprpc_controller.h
+example/caller/CMakeFiles/consumer.dir/call_user_service.cc.o: ../src/include/zookeeper_util.h
 example/caller/CMakeFiles/consumer.dir/call_user_service.cc.o: ../example/caller/call_user_service.cc
 

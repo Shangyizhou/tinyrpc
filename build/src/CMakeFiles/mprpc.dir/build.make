@@ -60,15 +60,15 @@ include src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpc_application.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpc_application.cc.o: ../src/mprpc_application.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shang/code/C++/github/tinyrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/mprpc.dir/mprpc_application.cc.o"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/mprpc_application.cc.o -c /home/shang/code/C++/github/tinyrpc/src/mprpc_application.cc
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/mprpc_application.cc.o -c /home/shang/code/C++/github/tinyrpc/src/mprpc_application.cc
 
 src/CMakeFiles/mprpc.dir/mprpc_application.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpc_application.cc.i"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/src/mprpc_application.cc > CMakeFiles/mprpc.dir/mprpc_application.cc.i
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/src/mprpc_application.cc > CMakeFiles/mprpc.dir/mprpc_application.cc.i
 
 src/CMakeFiles/mprpc.dir/mprpc_application.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpc_application.cc.s"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/src/mprpc_application.cc -o CMakeFiles/mprpc.dir/mprpc_application.cc.s
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/src/mprpc_application.cc -o CMakeFiles/mprpc.dir/mprpc_application.cc.s
 
 src/CMakeFiles/mprpc.dir/mprpc_application.cc.o.requires:
 
@@ -84,15 +84,15 @@ src/CMakeFiles/mprpc.dir/mprpc_application.cc.o.provides.build: src/CMakeFiles/m
 src/CMakeFiles/mprpc.dir/mprpc_config.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpc_config.cc.o: ../src/mprpc_config.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shang/code/C++/github/tinyrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/mprpc.dir/mprpc_config.cc.o"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/mprpc_config.cc.o -c /home/shang/code/C++/github/tinyrpc/src/mprpc_config.cc
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/mprpc_config.cc.o -c /home/shang/code/C++/github/tinyrpc/src/mprpc_config.cc
 
 src/CMakeFiles/mprpc.dir/mprpc_config.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpc_config.cc.i"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/src/mprpc_config.cc > CMakeFiles/mprpc.dir/mprpc_config.cc.i
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/src/mprpc_config.cc > CMakeFiles/mprpc.dir/mprpc_config.cc.i
 
 src/CMakeFiles/mprpc.dir/mprpc_config.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpc_config.cc.s"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/src/mprpc_config.cc -o CMakeFiles/mprpc.dir/mprpc_config.cc.s
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/src/mprpc_config.cc -o CMakeFiles/mprpc.dir/mprpc_config.cc.s
 
 src/CMakeFiles/mprpc.dir/mprpc_config.cc.o.requires:
 
@@ -108,15 +108,15 @@ src/CMakeFiles/mprpc.dir/mprpc_config.cc.o.provides.build: src/CMakeFiles/mprpc.
 src/CMakeFiles/mprpc.dir/mprpc_provider.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpc_provider.cc.o: ../src/mprpc_provider.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shang/code/C++/github/tinyrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/mprpc.dir/mprpc_provider.cc.o"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/mprpc_provider.cc.o -c /home/shang/code/C++/github/tinyrpc/src/mprpc_provider.cc
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/mprpc_provider.cc.o -c /home/shang/code/C++/github/tinyrpc/src/mprpc_provider.cc
 
 src/CMakeFiles/mprpc.dir/mprpc_provider.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpc_provider.cc.i"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/src/mprpc_provider.cc > CMakeFiles/mprpc.dir/mprpc_provider.cc.i
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/src/mprpc_provider.cc > CMakeFiles/mprpc.dir/mprpc_provider.cc.i
 
 src/CMakeFiles/mprpc.dir/mprpc_provider.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpc_provider.cc.s"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/src/mprpc_provider.cc -o CMakeFiles/mprpc.dir/mprpc_provider.cc.s
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/src/mprpc_provider.cc -o CMakeFiles/mprpc.dir/mprpc_provider.cc.s
 
 src/CMakeFiles/mprpc.dir/mprpc_provider.cc.o.requires:
 
@@ -132,15 +132,15 @@ src/CMakeFiles/mprpc.dir/mprpc_provider.cc.o.provides.build: src/CMakeFiles/mprp
 src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o: ../src/rpc_header.pb.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shang/code/C++/github/tinyrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/rpc_header.pb.cc.o -c /home/shang/code/C++/github/tinyrpc/src/rpc_header.pb.cc
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/rpc_header.pb.cc.o -c /home/shang/code/C++/github/tinyrpc/src/rpc_header.pb.cc
 
 src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/rpc_header.pb.cc.i"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/src/rpc_header.pb.cc > CMakeFiles/mprpc.dir/rpc_header.pb.cc.i
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/src/rpc_header.pb.cc > CMakeFiles/mprpc.dir/rpc_header.pb.cc.i
 
 src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/rpc_header.pb.cc.s"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/src/rpc_header.pb.cc -o CMakeFiles/mprpc.dir/rpc_header.pb.cc.s
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/src/rpc_header.pb.cc -o CMakeFiles/mprpc.dir/rpc_header.pb.cc.s
 
 src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o.requires:
 
@@ -156,15 +156,15 @@ src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o.provides.build: src/CMakeFiles/mprpc
 src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o: ../src/mprpc_channel.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shang/code/C++/github/tinyrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/mprpc_channel.cc.o -c /home/shang/code/C++/github/tinyrpc/src/mprpc_channel.cc
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/mprpc_channel.cc.o -c /home/shang/code/C++/github/tinyrpc/src/mprpc_channel.cc
 
 src/CMakeFiles/mprpc.dir/mprpc_channel.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpc_channel.cc.i"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/src/mprpc_channel.cc > CMakeFiles/mprpc.dir/mprpc_channel.cc.i
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/src/mprpc_channel.cc > CMakeFiles/mprpc.dir/mprpc_channel.cc.i
 
 src/CMakeFiles/mprpc.dir/mprpc_channel.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpc_channel.cc.s"
-	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/src/mprpc_channel.cc -o CMakeFiles/mprpc.dir/mprpc_channel.cc.s
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/src/mprpc_channel.cc -o CMakeFiles/mprpc.dir/mprpc_channel.cc.s
 
 src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o.requires:
 
@@ -177,13 +177,63 @@ src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o.provides: src/CMakeFiles/mprpc.dir/m
 src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o.provides.build: src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o
 
 
+src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o: src/CMakeFiles/mprpc.dir/flags.make
+src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o: ../src/mprpc_controller.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shang/code/C++/github/tinyrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o"
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/mprpc_controller.cc.o -c /home/shang/code/C++/github/tinyrpc/src/mprpc_controller.cc
+
+src/CMakeFiles/mprpc.dir/mprpc_controller.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpc_controller.cc.i"
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/src/mprpc_controller.cc > CMakeFiles/mprpc.dir/mprpc_controller.cc.i
+
+src/CMakeFiles/mprpc.dir/mprpc_controller.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpc_controller.cc.s"
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/src/mprpc_controller.cc -o CMakeFiles/mprpc.dir/mprpc_controller.cc.s
+
+src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o.requires:
+
+.PHONY : src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o.requires
+
+src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o.provides: src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o.requires
+	$(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o.provides.build
+.PHONY : src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o.provides
+
+src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o.provides.build: src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o
+
+
+src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o: src/CMakeFiles/mprpc.dir/flags.make
+src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o: ../src/zookeeper_util.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shang/code/C++/github/tinyrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o"
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mprpc.dir/zookeeper_util.cc.o -c /home/shang/code/C++/github/tinyrpc/src/zookeeper_util.cc
+
+src/CMakeFiles/mprpc.dir/zookeeper_util.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/zookeeper_util.cc.i"
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/src/zookeeper_util.cc > CMakeFiles/mprpc.dir/zookeeper_util.cc.i
+
+src/CMakeFiles/mprpc.dir/zookeeper_util.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/zookeeper_util.cc.s"
+	cd /home/shang/code/C++/github/tinyrpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/src/zookeeper_util.cc -o CMakeFiles/mprpc.dir/zookeeper_util.cc.s
+
+src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o.requires:
+
+.PHONY : src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o.requires
+
+src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o.provides: src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o.requires
+	$(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o.provides.build
+.PHONY : src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o.provides
+
+src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o.provides.build: src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o
+
+
 # Object files for target mprpc
 mprpc_OBJECTS = \
 "CMakeFiles/mprpc.dir/mprpc_application.cc.o" \
 "CMakeFiles/mprpc.dir/mprpc_config.cc.o" \
 "CMakeFiles/mprpc.dir/mprpc_provider.cc.o" \
 "CMakeFiles/mprpc.dir/rpc_header.pb.cc.o" \
-"CMakeFiles/mprpc.dir/mprpc_channel.cc.o"
+"CMakeFiles/mprpc.dir/mprpc_channel.cc.o" \
+"CMakeFiles/mprpc.dir/mprpc_controller.cc.o" \
+"CMakeFiles/mprpc.dir/zookeeper_util.cc.o"
 
 # External object files for target mprpc
 mprpc_EXTERNAL_OBJECTS =
@@ -193,9 +243,11 @@ mprpc_EXTERNAL_OBJECTS =
 ../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/mprpc_provider.cc.o
 ../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o
 ../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o
+../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o
+../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o
 ../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/build.make
 ../lib/libmprpc.a: src/CMakeFiles/mprpc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shang/code/C++/github/tinyrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ../../lib/libmprpc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shang/code/C++/github/tinyrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library ../../lib/libmprpc.a"
 	cd /home/shang/code/C++/github/tinyrpc/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mprpc.dir/cmake_clean_target.cmake
 	cd /home/shang/code/C++/github/tinyrpc/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mprpc.dir/link.txt --verbose=$(VERBOSE)
 
@@ -209,6 +261,8 @@ src/CMakeFiles/mprpc.dir/requires: src/CMakeFiles/mprpc.dir/mprpc_config.cc.o.re
 src/CMakeFiles/mprpc.dir/requires: src/CMakeFiles/mprpc.dir/mprpc_provider.cc.o.requires
 src/CMakeFiles/mprpc.dir/requires: src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o.requires
 src/CMakeFiles/mprpc.dir/requires: src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o.requires
+src/CMakeFiles/mprpc.dir/requires: src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o.requires
+src/CMakeFiles/mprpc.dir/requires: src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o.requires
 
 .PHONY : src/CMakeFiles/mprpc.dir/requires
 

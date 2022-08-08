@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Aug  6 01:11:25 2022
+# Make data base, printed on Tue Aug  9 00:37:23 2022
 
 # Variables
 
@@ -33,9 +33,11 @@ CURDIR := /home/shang/code/C++/github/tinyrpc
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1d735750dbb1b9066c7513078396ba0f.zh-cn","_translationsConfigFile":"/root/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/tcf.json","_cacheRoot":"/root/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn","_resolvedLanguagePackCoreLocation":"/root/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/3b889b090b5ad5793f524b5d1d39fda662b96a2a","_corruptedFile":"/root/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/corrupted.info","_languagePackSupport":true}
+JRE_HOME = /usr/local/jdk1.8/jre
 # environment
-_ = /root/.vscode-server/bin/3b889b090b5ad5793f524b5d1d39fda662b96a2a/node
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"e1243840abbb4e31a890d397033a9abf.zh-cn","_translationsConfigFile":"/root/.vscode-server/data/clp/e1243840abbb4e31a890d397033a9abf.zh-cn/tcf.json","_cacheRoot":"/root/.vscode-server/data/clp/e1243840abbb4e31a890d397033a9abf.zh-cn","_resolvedLanguagePackCoreLocation":"/root/.vscode-server/data/clp/e1243840abbb4e31a890d397033a9abf.zh-cn/da76f93349a72022ca4670c1b84860304616aaa2","_corruptedFile":"/root/.vscode-server/data/clp/e1243840abbb4e31a890d397033a9abf.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /root/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/node
 # makefile
 MAKEFILE_LIST := 
 # 'override' directive
@@ -49,9 +51,9 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 VSCODE_CWD = /root
 # environment
-SSH_CONNECTION = 123.98.26.67 9364 172.19.38.237 22
+SSH_CONNECTION = 123.98.26.67 8220 172.19.38.237 22
 # environment
-PATH = /root/.vscode-server/bin/3b889b090b5ad5793f524b5d1d39fda662b96a2a/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin
+PATH = /root/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/bin/remote-cli:.:/usr/local/jdk1.8/bin:.:/usr/local/jdk1.8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin
 # environment
 XDG_RUNTIME_DIR = /run/user/0
 # environment
@@ -67,7 +69,7 @@ LS_COLORS =
 # environment
 PWD = /home/shang/code/C++/github/tinyrpc
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/0/vscode-ipc-b52a6e4e-0a46-4fe5-abe8-9f44f9a5a55b.sock
+VSCODE_IPC_HOOK_CLI = /run/user/0/vscode-ipc-f7ebfd8b-167a-4414-85d9-19e00f1d2f60.sock
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -79,7 +81,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = root
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 +F = $(notdir $+)
 # environment
@@ -95,13 +97,17 @@ MAKECMDGOALS := all
 # environment
 SHLVL = 3
 # environment
-XDG_SESSION_ID = 6
+JAVA_HOME = /usr/local/jdk1.8
+# environment
+XDG_SESSION_ID = 462
 # environment
 USER = root
 # makefile
 .DEFAULT_GOAL := 
 # environment
 GOROOT = /usr/local/go
+# environment
+CLASSPATH = .:/usr/local/jdk1.8/lib:/usr/local/jdk1.8/jre/lib
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
@@ -115,13 +121,13 @@ MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_CLIENT = 123.98.26.67 9364 22
+SSH_CLIENT = 123.98.26.67 8220 22
 # environment
 MAIL = /var/mail/root
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
-BROWSER = /root/.vscode-server/bin/3b889b090b5ad5793f524b5d1d39fda662b96a2a/bin/helpers/browser.sh
+BROWSER = /root/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/bin/helpers/browser.sh
 # environment
 S_COLORS = auto
 # environment
@@ -145,7 +151,7 @@ MAKE_HOST := x86_64-pc-linux-gnu
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=66/1024=6%, Rehash=0, Collisions=8/88=9%
+# Load=69/1024=7%, Rehash=0, Collisions=8/91=9%
 
 # Pattern-specific Variable Values
 
@@ -211,6 +217,6 @@ GNUmakefile:
 # strcache performance: lookups = 25 / hit rate = 12%
 # hash-table stats:
 # Load=22/8192=0%, Rehash=0, Collisions=1/25=4%
-# Finished Make data base on Sat Aug  6 01:11:25 2022
+# Finished Make data base on Tue Aug  9 00:37:23 2022
 
  

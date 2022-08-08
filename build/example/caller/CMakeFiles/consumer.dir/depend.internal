@@ -9,4 +9,6 @@ example/caller/CMakeFiles/consumer.dir/call_user_service.cc.o
  ../src/include/mprpc_application.h
  ../src/include/mprpc_channel.h
  ../src/include/mprpc_config.h
+ ../src/include/mprpc_controller.h
+ ../src/include/zookeeper_util.h
  /home/shang/code/C++/github/tinyrpc/example/caller/call_user_service.cc

@@ -7,6 +7,9 @@ example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o
 example/callee/CMakeFiles/provider.dir/user_service.cc.o
  ../example/user.pb.h
  ../src/include/mprpc_application.h
+ ../src/include/mprpc_channel.h
  ../src/include/mprpc_config.h
+ ../src/include/mprpc_controller.h
  ../src/include/mprpc_provider.h
+ ../src/include/zookeeper_util.h
  /home/shang/code/C++/github/tinyrpc/example/callee/user_service.cc

@@ -2,6 +2,9 @@
 #define __MPRPC_APPLICATION_H__
 
 #include "mprpc_config.h"
+#include "mprpc_channel.h"
+#include "mprpc_controller.h"
+#include "zookeeper_util.h"
 
 class MprpcApplication
 {
