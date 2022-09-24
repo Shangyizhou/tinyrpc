@@ -51,18 +51,18 @@ void MprpcProvider::Run()
             std::placeholders::_2, std::placeholders::_3));
 
     // 把当前rpc节点上要发布的服务全部注册到zk上面，让rpc client可以从zk上发现服务
-    // session timeout   30s     zkclient 网络I/O线程  1/3 * timeout 时间发送ping消息
     ZkClient zkCli;
     zkCli.Start();
-    // service_name为永久性节点    method_name为临时性节点
+    // service_name为永久性节点，method_name为临时性节点
     for (auto &sp : m_serviceMap) 
     {
-        // /service_name   /UserServiceRpc
+        // /UserServiceRpc
         std::string service_path = "/" + sp.first;
         zkCli.Create(service_path.c_str(), nullptr, 0);
         for (auto &mp : sp.second.m_methodMap)
         {
-            // /service_name/method_name   /UserServiceRpc/Login 存储当前这个rpc服务节点主机的ip和port
+            // path = /UserServiceRpc/Login 
+            // value = 127.0.0.1:2181
             std::string method_path = service_path + "/" + mp.first;
             char method_path_data[128] = {0};
             sprintf(method_path_data, "%s:%d", ip.c_str(), 2181);
@@ -89,12 +89,12 @@ void MprpcProvider::OnConnection(const muduo::net::TcpConnectionPtr &conn)
 }
 
 /**
+ * 如果远程有一个rpc服务的调用请求，那么OnMessage方法就会响应
  * 这个发送的信息都是经过了协议商定的
  * service_name method_name args 定义proto的message类型，进行数据头的序列化和反序列化
  * 既然是针对于数据头，那么我们需要获取指定的一些长度(需要考虑TCP黏包问题)
- * header_sezi header_str args_str
+ * header_size header_str args_str
  */
-// 如果远程有一个rpc服务的调用请求，那么OnMessage方法就会响应
 void MprpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn, 
                                 muduo::net::Buffer* buffer,
                                 muduo::Timestamp timestamp)

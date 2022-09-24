@@ -9,13 +9,11 @@ MprpcConfig MprpcApplication:: m_config;
 // 参数提示信息
 void ShowArgsHelp()
 {
-    std::cout<<"format: command -i <configfile>" << std::endl;
+    std::cout << "format: command -i <configfile>" << std::endl;
 }
 
 void MprpcApplication::Init(int argc, char **argv)
 {
-    // std::cout << "MprpcApplication::Init" << std::endl;
-
     if (argc < 2) 
     {
         ShowArgsHelp();
@@ -42,17 +40,16 @@ void MprpcApplication::Init(int argc, char **argv)
         }
     }
 
-    std::cout << "config_file = " << config_file << std::endl;
-
     // 开始加载配置文件
     m_config.LoadConfigFile(config_file.c_str());
 
-    std::cout << "===================加载配置信息==================" << std::endl;
-    std::cout << "rpc_server_ip:" << m_config.Load("rpc_server_ip") << std::endl;
-    std::cout << "rpc_server_port:" << m_config.Load("rpc_server_port") << std::endl;
-    std::cout << "zookeeper_ip:" << m_config.Load("zookeeper_ip") << std::endl;
-    std::cout << "zookeeper_port:" << m_config.Load("zookeeper_port") << std::endl;
-    std::cout << "=========================================================" << std::endl;
+    printf("=======================Loading Configure Information======================\n");
+    printf("config_file:      %-10s\n", config_file.c_str());
+    printf("rpc_server_ip:    %-10s\n", m_config.Load("rpc_server_ip").c_str());
+    printf("rpc_server_port:  %-10s\n", m_config.Load("rpc_server_port").c_str());
+    printf("zookeeper_ip:     %-10s\n", m_config.Load("zookeeper_ip").c_str());
+    printf("zookeeper_port:   %-10s\n", m_config.Load("zookeeper_port").c_str());
+    printf("==========================================================================\n");  
 }
 
 MprpcApplication& MprpcApplication::GetInstance()

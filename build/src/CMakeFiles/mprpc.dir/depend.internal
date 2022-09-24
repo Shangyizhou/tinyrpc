@@ -7,7 +7,7 @@ src/CMakeFiles/mprpc.dir/mprpc_application.cc.o
  ../src/include/mprpc_config.h
  ../src/include/mprpc_controller.h
  ../src/include/zookeeper_util.h
- /home/shang/code/C++/github/tinyrpc/src/mprpc_application.cc
+ /home/shang/code/C++/github-project/student-work-project/tinyrpc/src/mprpc_application.cc
 src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o
  ../src/include/mprpc_application.h
  ../src/include/mprpc_channel.h
@@ -15,13 +15,13 @@ src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o
  ../src/include/mprpc_controller.h
  ../src/include/rpc_header.pb.h
  ../src/include/zookeeper_util.h
- /home/shang/code/C++/github/tinyrpc/src/mprpc_channel.cc
+ /home/shang/code/C++/github-project/student-work-project/tinyrpc/src/mprpc_channel.cc
 src/CMakeFiles/mprpc.dir/mprpc_config.cc.o
  ../src/include/mprpc_config.h
- /home/shang/code/C++/github/tinyrpc/src/mprpc_config.cc
+ /home/shang/code/C++/github-project/student-work-project/tinyrpc/src/mprpc_config.cc
 src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o
  ../src/include/mprpc_controller.h
- /home/shang/code/C++/github/tinyrpc/src/mprpc_controller.cc
+ /home/shang/code/C++/github-project/student-work-project/tinyrpc/src/mprpc_controller.cc
 src/CMakeFiles/mprpc.dir/mprpc_provider.cc.o
  ../src/include/mprpc_application.h
  ../src/include/mprpc_channel.h
@@ -30,14 +30,14 @@ src/CMakeFiles/mprpc.dir/mprpc_provider.cc.o
  ../src/include/mprpc_provider.h
  ../src/include/rpc_header.pb.h
  ../src/include/zookeeper_util.h
- /home/shang/code/C++/github/tinyrpc/src/mprpc_provider.cc
+ /home/shang/code/C++/github-project/student-work-project/tinyrpc/src/mprpc_provider.cc
 src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o
  ../src/include/rpc_header.pb.h
- /home/shang/code/C++/github/tinyrpc/src/rpc_header.pb.cc
+ /home/shang/code/C++/github-project/student-work-project/tinyrpc/src/rpc_header.pb.cc
 src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o
  ../src/include/mprpc_application.h
  ../src/include/mprpc_channel.h
  ../src/include/mprpc_config.h
  ../src/include/mprpc_controller.h
  ../src/include/zookeeper_util.h
- /home/shang/code/C++/github/tinyrpc/src/zookeeper_util.cc
+ /home/shang/code/C++/github-project/student-work-project/tinyrpc/src/zookeeper_util.cc

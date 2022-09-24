@@ -34,7 +34,7 @@ private:
         // 保存服务方法
         std::unordered_map<std::string, const google::protobuf::MethodDescriptor*> m_methodMap;
     };
-    // 存储注册成功的服务对象和器服务方法的所以信息
+    // 存储注册成功的服务对象和服务方法的所有信息
     std::unordered_map<std::string, ServiceInfo> m_serviceMap;
     // 使用智能指针管理
     std::unique_ptr<muduo::net::TcpServer> m_tcpserverPtr;

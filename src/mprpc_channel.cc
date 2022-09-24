@@ -10,26 +10,67 @@
 #include <unistd.h>
 #include <errno.h>
 
-/**
- * header_size service_name method_name args_size args
- */
+struct ServiceAddress
+{
+    std::string ip;
+    uint16_t port;
+};
+
+// 读取配置文件rpcserver的信息
+// std::string ip = MprpcApplication::GetInstance().GetConfig().Load("rpcserverip");
+// uint16_t port = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
+// rpc调用方想调用service_name的method_name服务，需要查询zk上该服务所在的host信息
+bool GetServiceAddress(const std::string& service_name, 
+                    const std::string& method_name, 
+                    ServiceAddress& service_address,
+                    ::google::protobuf::RpcController* controller)
+{
+    ZkClient zkCli;
+    zkCli.Start();
+    std::string method_path = "/" + service_name + "/" + method_name;
+    // 127.0.0.1:8000
+    std::string host_data = zkCli.GetData(method_path.c_str());
+    if (host_data == "")
+    {
+        controller->SetFailed(method_path + " is not exist!");
+        return false;
+    }
+    int idx = host_data.find(":");
+    if (idx == -1)
+    {
+        controller->SetFailed(method_path + " address is invalid!");
+        return false;
+    }
+
+    service_address.ip = host_data.substr(0, idx);
+    service_address.port = atoi(host_data.substr(idx+1, host_data.size()-idx).c_str()); 
+    return true;
+}
+
+bool sendRpcRquest(const ServiceAddress& service_address)
+{
+
+}
 
 // 重写RpcChannel::CallMethod方法，统一做rpc方法的序列化和网络发送
+// header_size service_name method_name args_size args
 void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
                           google::protobuf::RpcController* controller, 
                           const google::protobuf::Message* request,
                           google::protobuf::Message* response, 
                           google::protobuf::Closure* done)
 {
+    // 通过ServiceDescriptor获取调用rpc服务名称，方法名称
     const ::google::protobuf::ServiceDescriptor* sd = method->service();    
     std::string service_name = sd->name();
     std::string method_name = method->name();
 
-    // 获取参数的序列化字符串长度
+    // 将请求参数序列化并获取字符串长度
     uint32_t args_size = 0;
     std::string args_str;
     if (request->SerializeToString(&args_str))
     {
+        uint32_t args_size = 0;
         args_size = args_str.size();
     }
     else
@@ -44,6 +85,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     rpcHeader.set_methon_name(method_name);
     rpcHeader.set_args_size(args_size);
 
+    // 获取请求header的字符串长度
     uint32_t header_size = 0;
     std::string rpc_header_str;
     if (rpcHeader.SerializeToString(&rpc_header_str))
@@ -70,6 +112,13 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     std::cout << "args_str: " << args_str << std::endl; 
     std::cout << "============================================" << std::endl;
 
+    // 获取微服务的地址
+    ServiceAddress service_address;
+    if (false == GetServiceAddress(service_name, method_name, service_address, controller))
+    {
+        return;
+    }
+
     // 使用tcp编程，完成rpc方法的远程调用
     int clientfd = socket(AF_INET, SOCK_STREAM, 0);
     if (-1 == clientfd)
@@ -79,34 +128,11 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
         controller->SetFailed(errtxt);
         return;
     }
-
-    // 读取配置文件rpcserver的信息
-    // std::string ip = MprpcApplication::GetInstance().GetConfig().Load("rpcserverip");
-    // uint16_t port = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
-    // rpc调用方想调用service_name的method_name服务，需要查询zk上该服务所在的host信息
-    ZkClient zkCli;
-    zkCli.Start();
-    std::string method_path = "/" + service_name + "/" + method_name;
-    // 127.0.0.1:8000
-    std::string host_data = zkCli.GetData(method_path.c_str());
-    if (host_data == "")
-    {
-        controller->SetFailed(method_path + " is not exist!");
-        return;
-    }
-    int idx = host_data.find(":");
-    if (idx == -1)
-    {
-        controller->SetFailed(method_path + " address is invalid!");
-        return;
-    }
-    std::string ip = host_data.substr(0, idx);
-    uint16_t port = atoi(host_data.substr(idx+1, host_data.size()-idx).c_str()); 
-
+    
     struct sockaddr_in server_addr;
     server_addr.sin_family = AF_INET;
-    server_addr.sin_port = htons(port);
-    server_addr.sin_addr.s_addr = inet_addr(ip.c_str());
+    server_addr.sin_port = htons(service_address.port);
+    server_addr.sin_addr.s_addr = inet_addr(service_address.ip.c_str());
 
     // 连接rpc服务节点
     if (-1 == connect(clientfd, (struct sockaddr*)&server_addr, sizeof(server_addr)))

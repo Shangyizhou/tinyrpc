@@ -1,4 +1,4 @@
-# Install script for directory: /home/shang/code/C++/github/tinyrpc
+# Install script for directory: /home/shang/code/C++/github-project/student-work-project/tinyrpc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/shang/code/C++/github/tinyrpc/build/src/cmake_install.cmake")
-  include("/home/shang/code/C++/github/tinyrpc/build/example/cmake_install.cmake")
+  include("/home/shang/code/C++/github-project/student-work-project/tinyrpc/build/src/cmake_install.cmake")
+  include("/home/shang/code/C++/github-project/student-work-project/tinyrpc/build/example/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/shang/code/C++/github/tinyrpc/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/shang/code/C++/github-project/student-work-project/tinyrpc/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

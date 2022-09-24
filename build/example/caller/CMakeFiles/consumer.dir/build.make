@@ -60,15 +60,15 @@ include example/caller/CMakeFiles/consumer.dir/flags.make
 example/caller/CMakeFiles/consumer.dir/call_user_service.cc.o: example/caller/CMakeFiles/consumer.dir/flags.make
 example/caller/CMakeFiles/consumer.dir/call_user_service.cc.o: ../example/caller/call_user_service.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shang/code/C++/github/tinyrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/caller/CMakeFiles/consumer.dir/call_user_service.cc.o"
-	cd /home/shang/code/C++/github/tinyrpc/build/example/caller && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/consumer.dir/call_user_service.cc.o -c /home/shang/code/C++/github/tinyrpc/example/caller/call_user_service.cc
+	cd /home/shang/code/C++/github/tinyrpc/build/example/caller && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/consumer.dir/call_user_service.cc.o -c /home/shang/code/C++/github/tinyrpc/example/caller/call_user_service.cc
 
 example/caller/CMakeFiles/consumer.dir/call_user_service.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/consumer.dir/call_user_service.cc.i"
-	cd /home/shang/code/C++/github/tinyrpc/build/example/caller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/example/caller/call_user_service.cc > CMakeFiles/consumer.dir/call_user_service.cc.i
+	cd /home/shang/code/C++/github/tinyrpc/build/example/caller && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/example/caller/call_user_service.cc > CMakeFiles/consumer.dir/call_user_service.cc.i
 
 example/caller/CMakeFiles/consumer.dir/call_user_service.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/consumer.dir/call_user_service.cc.s"
-	cd /home/shang/code/C++/github/tinyrpc/build/example/caller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/example/caller/call_user_service.cc -o CMakeFiles/consumer.dir/call_user_service.cc.s
+	cd /home/shang/code/C++/github/tinyrpc/build/example/caller && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/example/caller/call_user_service.cc -o CMakeFiles/consumer.dir/call_user_service.cc.s
 
 example/caller/CMakeFiles/consumer.dir/call_user_service.cc.o.requires:
 
@@ -84,15 +84,15 @@ example/caller/CMakeFiles/consumer.dir/call_user_service.cc.o.provides.build: ex
 example/caller/CMakeFiles/consumer.dir/__/user.pb.cc.o: example/caller/CMakeFiles/consumer.dir/flags.make
 example/caller/CMakeFiles/consumer.dir/__/user.pb.cc.o: ../example/user.pb.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shang/code/C++/github/tinyrpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object example/caller/CMakeFiles/consumer.dir/__/user.pb.cc.o"
-	cd /home/shang/code/C++/github/tinyrpc/build/example/caller && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/consumer.dir/__/user.pb.cc.o -c /home/shang/code/C++/github/tinyrpc/example/user.pb.cc
+	cd /home/shang/code/C++/github/tinyrpc/build/example/caller && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/consumer.dir/__/user.pb.cc.o -c /home/shang/code/C++/github/tinyrpc/example/user.pb.cc
 
 example/caller/CMakeFiles/consumer.dir/__/user.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/consumer.dir/__/user.pb.cc.i"
-	cd /home/shang/code/C++/github/tinyrpc/build/example/caller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/example/user.pb.cc > CMakeFiles/consumer.dir/__/user.pb.cc.i
+	cd /home/shang/code/C++/github/tinyrpc/build/example/caller && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shang/code/C++/github/tinyrpc/example/user.pb.cc > CMakeFiles/consumer.dir/__/user.pb.cc.i
 
 example/caller/CMakeFiles/consumer.dir/__/user.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/consumer.dir/__/user.pb.cc.s"
-	cd /home/shang/code/C++/github/tinyrpc/build/example/caller && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/example/user.pb.cc -o CMakeFiles/consumer.dir/__/user.pb.cc.s
+	cd /home/shang/code/C++/github/tinyrpc/build/example/caller && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shang/code/C++/github/tinyrpc/example/user.pb.cc -o CMakeFiles/consumer.dir/__/user.pb.cc.s
 
 example/caller/CMakeFiles/consumer.dir/__/user.pb.cc.o.requires:
 

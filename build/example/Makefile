@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shang/code/C++/github/tinyrpc
+CMAKE_SOURCE_DIR = /home/shang/code/C++/github-project/student-work-project/tinyrpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shang/code/C++/github/tinyrpc/build
+CMAKE_BINARY_DIR = /home/shang/code/C++/github-project/student-work-project/tinyrpc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/shang/code/C++/github/tinyrpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github/tinyrpc/build/CMakeFiles /home/shang/code/C++/github/tinyrpc/build/example/CMakeFiles/progress.marks
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 example/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github/tinyrpc/build/CMakeFiles 0
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/example/CMakeFiles/progress.marks
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 example/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 example/clean
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 example/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,17 +97,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -129,6 +129,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

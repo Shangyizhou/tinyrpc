@@ -6,9 +6,8 @@
 #include "mprpc_config.h"
 #include "mprpc_controller.h"
 
-
 // 一个本地服务，现在要将它变成rpc服务
-class UserService : public fixbug::UserServiceRpc // rpc服务提供者
+class UserService : public fixbug::UserServiceRpc 
 {
 public:
     bool Login(const std::string& name, const std::string& pwd)
@@ -17,18 +16,13 @@ public:
         std::cout << "name:" << name << " pwd:" << pwd << std::endl;
     }
 
+    
     bool Register(uint32_t id, std::string name, std::string pwd)
     {
         std::cout << "doing local service: Register" << std::endl;
         std::cout << "id" << id << "name:" << name << " pwd:" << pwd << std::endl;
     }
 
-    // 重写 fixbug::UserServiceRpc::Login 方法
-    // 此方法由rpc框架调用
-    /**
-     * caller => Login(LoginRequest) => muduo => 
-     * callee => Login(LoginRequest) => 交到重写的Login方法
-     */
     void Login(::google::protobuf::RpcController* controller,
                     const ::fixbug::LoginRequest* request,
                     ::fixbug::LoginResponse* response,
@@ -48,7 +42,7 @@ public:
         response->set_success(login_result);
 
         // 执行回调操作
-        // hi行响应对象数据的序列化和网络发送
+        // 完成响应对象数据的序列化和网络发送
         done->Run();
     }
 
@@ -74,17 +68,15 @@ public:
 
 int main(int argc, char **argv)
 {
-    // 调用框架的初始化操作
+    // 框架的初始化操作
     MprpcApplication::Init(argc, argv);
     
     // provider是一个rpc网络服务对象，把userService对象发布到rpc节点上
     MprpcProvider provider;
     provider.NotifyService(new UserService());
 
-    /**
-     * 启动一个rpc发布节点，进入阻塞状态等待远处rpc请求
-     * 启动muduo的事件循环
-     */
+    // 启动一个rpc发布节点，进入阻塞状态等待远处rpc请求
+    // 启动muduo的事件循环 
     provider.Run();
 
     return 0;

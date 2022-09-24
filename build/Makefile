@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shang/code/C++/github/tinyrpc
+CMAKE_SOURCE_DIR = /home/shang/code/C++/github-project/student-work-project/tinyrpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shang/code/C++/github/tinyrpc/build
+CMAKE_BINARY_DIR = /home/shang/code/C++/github-project/student-work-project/tinyrpc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github/tinyrpc/build/CMakeFiles /home/shang/code/C++/github/tinyrpc/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github/tinyrpc/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,19 +124,6 @@ mprpc/fast:
 .PHONY : mprpc/fast
 
 #=============================================================================
-# Target rules for targets named provider
-
-# Build rule for target.
-provider: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 provider
-.PHONY : provider
-
-# fast build rule for target.
-provider/fast:
-	$(MAKE) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/build
-.PHONY : provider/fast
-
-#=============================================================================
 # Target rules for targets named consumer
 
 # Build rule for target.
@@ -146,8 +133,21 @@ consumer: cmake_check_build_system
 
 # fast build rule for target.
 consumer/fast:
-	$(MAKE) -f example/caller/CMakeFiles/consumer.dir/build.make example/caller/CMakeFiles/consumer.dir/build
+	$(MAKE) -f example/client/CMakeFiles/consumer.dir/build.make example/client/CMakeFiles/consumer.dir/build
 .PHONY : consumer/fast
+
+#=============================================================================
+# Target rules for targets named provider
+
+# Build rule for target.
+provider: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 provider
+.PHONY : provider
+
+# fast build rule for target.
+provider/fast:
+	$(MAKE) -f example/server/CMakeFiles/provider.dir/build.make example/server/CMakeFiles/provider.dir/build
+.PHONY : provider/fast
 
 # Help Target
 help:
@@ -158,8 +158,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... mprpc"
-	@echo "... provider"
 	@echo "... consumer"
+	@echo "... provider"
 .PHONY : help
 
 

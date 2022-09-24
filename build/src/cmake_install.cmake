@@ -1,4 +1,4 @@
-# Install script for directory: /home/shang/code/C++/github/tinyrpc/src
+# Install script for directory: /home/shang/code/C++/github-project/student-work-project/tinyrpc/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

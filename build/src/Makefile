@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shang/code/C++/github/tinyrpc
+CMAKE_SOURCE_DIR = /home/shang/code/C++/github-project/student-work-project/tinyrpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shang/code/C++/github/tinyrpc/build
+CMAKE_BINARY_DIR = /home/shang/code/C++/github-project/student-work-project/tinyrpc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/shang/code/C++/github/tinyrpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github/tinyrpc/build/CMakeFiles /home/shang/code/C++/github/tinyrpc/build/src/CMakeFiles/progress.marks
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github/tinyrpc/build/CMakeFiles 0
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/src/CMakeFiles/progress.marks
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/mprpc.dir/rule:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mprpc.dir/rule
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mprpc.dir/rule
 .PHONY : src/CMakeFiles/mprpc.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ mprpc: src/CMakeFiles/mprpc.dir/rule
 
 # fast build rule for target.
 mprpc/fast:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/build
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/build
 .PHONY : mprpc/fast
 
 mprpc_application.o: mprpc_application.cc.o
@@ -131,7 +131,7 @@ mprpc_application.o: mprpc_application.cc.o
 
 # target to build an object file
 mprpc_application.cc.o:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_application.cc.o
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_application.cc.o
 .PHONY : mprpc_application.cc.o
 
 mprpc_application.i: mprpc_application.cc.i
@@ -140,7 +140,7 @@ mprpc_application.i: mprpc_application.cc.i
 
 # target to preprocess a source file
 mprpc_application.cc.i:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_application.cc.i
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_application.cc.i
 .PHONY : mprpc_application.cc.i
 
 mprpc_application.s: mprpc_application.cc.s
@@ -149,7 +149,7 @@ mprpc_application.s: mprpc_application.cc.s
 
 # target to generate assembly for a file
 mprpc_application.cc.s:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_application.cc.s
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_application.cc.s
 .PHONY : mprpc_application.cc.s
 
 mprpc_channel.o: mprpc_channel.cc.o
@@ -158,7 +158,7 @@ mprpc_channel.o: mprpc_channel.cc.o
 
 # target to build an object file
 mprpc_channel.cc.o:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o
 .PHONY : mprpc_channel.cc.o
 
 mprpc_channel.i: mprpc_channel.cc.i
@@ -167,7 +167,7 @@ mprpc_channel.i: mprpc_channel.cc.i
 
 # target to preprocess a source file
 mprpc_channel.cc.i:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_channel.cc.i
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_channel.cc.i
 .PHONY : mprpc_channel.cc.i
 
 mprpc_channel.s: mprpc_channel.cc.s
@@ -176,7 +176,7 @@ mprpc_channel.s: mprpc_channel.cc.s
 
 # target to generate assembly for a file
 mprpc_channel.cc.s:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_channel.cc.s
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_channel.cc.s
 .PHONY : mprpc_channel.cc.s
 
 mprpc_config.o: mprpc_config.cc.o
@@ -185,7 +185,7 @@ mprpc_config.o: mprpc_config.cc.o
 
 # target to build an object file
 mprpc_config.cc.o:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_config.cc.o
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_config.cc.o
 .PHONY : mprpc_config.cc.o
 
 mprpc_config.i: mprpc_config.cc.i
@@ -194,7 +194,7 @@ mprpc_config.i: mprpc_config.cc.i
 
 # target to preprocess a source file
 mprpc_config.cc.i:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_config.cc.i
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_config.cc.i
 .PHONY : mprpc_config.cc.i
 
 mprpc_config.s: mprpc_config.cc.s
@@ -203,7 +203,7 @@ mprpc_config.s: mprpc_config.cc.s
 
 # target to generate assembly for a file
 mprpc_config.cc.s:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_config.cc.s
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_config.cc.s
 .PHONY : mprpc_config.cc.s
 
 mprpc_controller.o: mprpc_controller.cc.o
@@ -212,7 +212,7 @@ mprpc_controller.o: mprpc_controller.cc.o
 
 # target to build an object file
 mprpc_controller.cc.o:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o
 .PHONY : mprpc_controller.cc.o
 
 mprpc_controller.i: mprpc_controller.cc.i
@@ -221,7 +221,7 @@ mprpc_controller.i: mprpc_controller.cc.i
 
 # target to preprocess a source file
 mprpc_controller.cc.i:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cc.i
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cc.i
 .PHONY : mprpc_controller.cc.i
 
 mprpc_controller.s: mprpc_controller.cc.s
@@ -230,7 +230,7 @@ mprpc_controller.s: mprpc_controller.cc.s
 
 # target to generate assembly for a file
 mprpc_controller.cc.s:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cc.s
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cc.s
 .PHONY : mprpc_controller.cc.s
 
 mprpc_provider.o: mprpc_provider.cc.o
@@ -239,7 +239,7 @@ mprpc_provider.o: mprpc_provider.cc.o
 
 # target to build an object file
 mprpc_provider.cc.o:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_provider.cc.o
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_provider.cc.o
 .PHONY : mprpc_provider.cc.o
 
 mprpc_provider.i: mprpc_provider.cc.i
@@ -248,7 +248,7 @@ mprpc_provider.i: mprpc_provider.cc.i
 
 # target to preprocess a source file
 mprpc_provider.cc.i:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_provider.cc.i
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_provider.cc.i
 .PHONY : mprpc_provider.cc.i
 
 mprpc_provider.s: mprpc_provider.cc.s
@@ -257,7 +257,7 @@ mprpc_provider.s: mprpc_provider.cc.s
 
 # target to generate assembly for a file
 mprpc_provider.cc.s:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_provider.cc.s
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_provider.cc.s
 .PHONY : mprpc_provider.cc.s
 
 rpc_header.pb.o: rpc_header.pb.cc.o
@@ -266,7 +266,7 @@ rpc_header.pb.o: rpc_header.pb.cc.o
 
 # target to build an object file
 rpc_header.pb.cc.o:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.o
 .PHONY : rpc_header.pb.cc.o
 
 rpc_header.pb.i: rpc_header.pb.cc.i
@@ -275,7 +275,7 @@ rpc_header.pb.i: rpc_header.pb.cc.i
 
 # target to preprocess a source file
 rpc_header.pb.cc.i:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.i
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.i
 .PHONY : rpc_header.pb.cc.i
 
 rpc_header.pb.s: rpc_header.pb.cc.s
@@ -284,7 +284,7 @@ rpc_header.pb.s: rpc_header.pb.cc.s
 
 # target to generate assembly for a file
 rpc_header.pb.cc.s:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.s
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.s
 .PHONY : rpc_header.pb.cc.s
 
 zookeeper_util.o: zookeeper_util.cc.o
@@ -293,7 +293,7 @@ zookeeper_util.o: zookeeper_util.cc.o
 
 # target to build an object file
 zookeeper_util.cc.o:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o
 .PHONY : zookeeper_util.cc.o
 
 zookeeper_util.i: zookeeper_util.cc.i
@@ -302,7 +302,7 @@ zookeeper_util.i: zookeeper_util.cc.i
 
 # target to preprocess a source file
 zookeeper_util.cc.i:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeper_util.cc.i
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeper_util.cc.i
 .PHONY : zookeeper_util.cc.i
 
 zookeeper_util.s: zookeeper_util.cc.s
@@ -311,7 +311,7 @@ zookeeper_util.s: zookeeper_util.cc.s
 
 # target to generate assembly for a file
 zookeeper_util.cc.s:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeper_util.cc.s
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeper_util.cc.s
 .PHONY : zookeeper_util.cc.s
 
 # Help Target
@@ -355,6 +355,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/shang/code/C++/github/tinyrpc/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

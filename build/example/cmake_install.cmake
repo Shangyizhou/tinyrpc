@@ -1,4 +1,4 @@
-# Install script for directory: /home/shang/code/C++/github/tinyrpc/example
+# Install script for directory: /home/shang/code/C++/github-project/student-work-project/tinyrpc/example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/shang/code/C++/github/tinyrpc/build/example/callee/cmake_install.cmake")
-  include("/home/shang/code/C++/github/tinyrpc/build/example/caller/cmake_install.cmake")
+  include("/home/shang/code/C++/github-project/student-work-project/tinyrpc/build/example/client/cmake_install.cmake")
+  include("/home/shang/code/C++/github-project/student-work-project/tinyrpc/build/example/server/cmake_install.cmake")
 
 endif()
 

@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2014 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Aug  9 00:37:23 2022
+# Make data base, printed on Wed Aug 10 14:05:54 2022
 
 # Variables
 
@@ -51,7 +49,7 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 VSCODE_CWD = /root
 # environment
-SSH_CONNECTION = 123.98.26.67 8220 172.19.38.237 22
+SSH_CONNECTION = 123.98.26.67 5777 172.19.38.237 22
 # environment
 PATH = /root/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/bin/remote-cli:.:/usr/local/jdk1.8/bin:.:/usr/local/jdk1.8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin
 # environment
@@ -69,7 +67,7 @@ LS_COLORS =
 # environment
 PWD = /home/shang/code/C++/github/tinyrpc
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/0/vscode-ipc-f7ebfd8b-167a-4414-85d9-19e00f1d2f60.sock
+VSCODE_IPC_HOOK_CLI = /run/user/0/vscode-ipc-979fbf6d-8703-4097-872c-7ca6e0d0f376.sock
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -81,7 +79,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = root
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 +F = $(notdir $+)
 # environment
@@ -99,7 +97,7 @@ SHLVL = 3
 # environment
 JAVA_HOME = /usr/local/jdk1.8
 # environment
-XDG_SESSION_ID = 462
+XDG_SESSION_ID = 796
 # environment
 USER = root
 # makefile
@@ -121,7 +119,7 @@ MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_CLIENT = 123.98.26.67 8220 22
+SSH_CLIENT = 123.98.26.67 5777 22
 # environment
 MAIL = /var/mail/root
 # automatic
@@ -159,9 +157,9 @@ LANG = C
 
 # Directories
 
-# . (device 64513, inode 1837963): 14 files, no impossibilities.
+# . (device 64513, inode 1837963): 13 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -211,12 +209,14 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 178 B / avg = 8 B
-# current buf: size = 8162 B / used = 178 B / count = 22 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 172 B / avg = 8 B
+# current buf: size = 8162 B / used = 172 B / count = 21 / avg = 8 B
 
-# strcache performance: lookups = 25 / hit rate = 12%
+# strcache performance: lookups = 24 / hit rate = 12%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=1/25=4%
-# Finished Make data base on Tue Aug  9 00:37:23 2022
+# Load=21/8192=0%, Rehash=0, Collisions=1/24=4%
+# Finished Make data base on Wed Aug 10 14:05:54 2022
 
  
+make: *** No rule to make target 'all'.  Stop.
+
