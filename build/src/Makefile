@@ -125,140 +125,140 @@ mprpc/fast:
 	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/build
 .PHONY : mprpc/fast
 
-mprpc_application.o: mprpc_application.cc.o
+MprpcApplication.o: MprpcApplication.cc.o
 
-.PHONY : mprpc_application.o
-
-# target to build an object file
-mprpc_application.cc.o:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_application.cc.o
-.PHONY : mprpc_application.cc.o
-
-mprpc_application.i: mprpc_application.cc.i
-
-.PHONY : mprpc_application.i
-
-# target to preprocess a source file
-mprpc_application.cc.i:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_application.cc.i
-.PHONY : mprpc_application.cc.i
-
-mprpc_application.s: mprpc_application.cc.s
-
-.PHONY : mprpc_application.s
-
-# target to generate assembly for a file
-mprpc_application.cc.s:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_application.cc.s
-.PHONY : mprpc_application.cc.s
-
-mprpc_channel.o: mprpc_channel.cc.o
-
-.PHONY : mprpc_channel.o
+.PHONY : MprpcApplication.o
 
 # target to build an object file
-mprpc_channel.cc.o:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_channel.cc.o
-.PHONY : mprpc_channel.cc.o
+MprpcApplication.cc.o:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/MprpcApplication.cc.o
+.PHONY : MprpcApplication.cc.o
 
-mprpc_channel.i: mprpc_channel.cc.i
+MprpcApplication.i: MprpcApplication.cc.i
 
-.PHONY : mprpc_channel.i
+.PHONY : MprpcApplication.i
 
 # target to preprocess a source file
-mprpc_channel.cc.i:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_channel.cc.i
-.PHONY : mprpc_channel.cc.i
+MprpcApplication.cc.i:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/MprpcApplication.cc.i
+.PHONY : MprpcApplication.cc.i
 
-mprpc_channel.s: mprpc_channel.cc.s
+MprpcApplication.s: MprpcApplication.cc.s
 
-.PHONY : mprpc_channel.s
+.PHONY : MprpcApplication.s
 
 # target to generate assembly for a file
-mprpc_channel.cc.s:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_channel.cc.s
-.PHONY : mprpc_channel.cc.s
+MprpcApplication.cc.s:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/MprpcApplication.cc.s
+.PHONY : MprpcApplication.cc.s
 
-mprpc_config.o: mprpc_config.cc.o
+MprpcChannel.o: MprpcChannel.cc.o
 
-.PHONY : mprpc_config.o
+.PHONY : MprpcChannel.o
 
 # target to build an object file
-mprpc_config.cc.o:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_config.cc.o
-.PHONY : mprpc_config.cc.o
+MprpcChannel.cc.o:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/MprpcChannel.cc.o
+.PHONY : MprpcChannel.cc.o
 
-mprpc_config.i: mprpc_config.cc.i
+MprpcChannel.i: MprpcChannel.cc.i
 
-.PHONY : mprpc_config.i
+.PHONY : MprpcChannel.i
 
 # target to preprocess a source file
-mprpc_config.cc.i:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_config.cc.i
-.PHONY : mprpc_config.cc.i
+MprpcChannel.cc.i:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/MprpcChannel.cc.i
+.PHONY : MprpcChannel.cc.i
 
-mprpc_config.s: mprpc_config.cc.s
+MprpcChannel.s: MprpcChannel.cc.s
 
-.PHONY : mprpc_config.s
+.PHONY : MprpcChannel.s
 
 # target to generate assembly for a file
-mprpc_config.cc.s:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_config.cc.s
-.PHONY : mprpc_config.cc.s
+MprpcChannel.cc.s:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/MprpcChannel.cc.s
+.PHONY : MprpcChannel.cc.s
 
-mprpc_controller.o: mprpc_controller.cc.o
+MprpcController.o: MprpcController.cc.o
 
-.PHONY : mprpc_controller.o
+.PHONY : MprpcController.o
 
 # target to build an object file
-mprpc_controller.cc.o:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cc.o
-.PHONY : mprpc_controller.cc.o
+MprpcController.cc.o:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/MprpcController.cc.o
+.PHONY : MprpcController.cc.o
 
-mprpc_controller.i: mprpc_controller.cc.i
+MprpcController.i: MprpcController.cc.i
 
-.PHONY : mprpc_controller.i
+.PHONY : MprpcController.i
 
 # target to preprocess a source file
-mprpc_controller.cc.i:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cc.i
-.PHONY : mprpc_controller.cc.i
+MprpcController.cc.i:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/MprpcController.cc.i
+.PHONY : MprpcController.cc.i
 
-mprpc_controller.s: mprpc_controller.cc.s
+MprpcController.s: MprpcController.cc.s
 
-.PHONY : mprpc_controller.s
+.PHONY : MprpcController.s
 
 # target to generate assembly for a file
-mprpc_controller.cc.s:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_controller.cc.s
-.PHONY : mprpc_controller.cc.s
+MprpcController.cc.s:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/MprpcController.cc.s
+.PHONY : MprpcController.cc.s
 
-mprpc_provider.o: mprpc_provider.cc.o
+MprpcProvider.o: MprpcProvider.cc.o
 
-.PHONY : mprpc_provider.o
+.PHONY : MprpcProvider.o
 
 # target to build an object file
-mprpc_provider.cc.o:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_provider.cc.o
-.PHONY : mprpc_provider.cc.o
+MprpcProvider.cc.o:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/MprpcProvider.cc.o
+.PHONY : MprpcProvider.cc.o
 
-mprpc_provider.i: mprpc_provider.cc.i
+MprpcProvider.i: MprpcProvider.cc.i
 
-.PHONY : mprpc_provider.i
+.PHONY : MprpcProvider.i
 
 # target to preprocess a source file
-mprpc_provider.cc.i:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_provider.cc.i
-.PHONY : mprpc_provider.cc.i
+MprpcProvider.cc.i:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/MprpcProvider.cc.i
+.PHONY : MprpcProvider.cc.i
 
-mprpc_provider.s: mprpc_provider.cc.s
+MprpcProvider.s: MprpcProvider.cc.s
 
-.PHONY : mprpc_provider.s
+.PHONY : MprpcProvider.s
 
 # target to generate assembly for a file
-mprpc_provider.cc.s:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpc_provider.cc.s
-.PHONY : mprpc_provider.cc.s
+MprpcProvider.cc.s:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/MprpcProvider.cc.s
+.PHONY : MprpcProvider.cc.s
+
+ZookeeperUtil.o: ZookeeperUtil.cc.o
+
+.PHONY : ZookeeperUtil.o
+
+# target to build an object file
+ZookeeperUtil.cc.o:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/ZookeeperUtil.cc.o
+.PHONY : ZookeeperUtil.cc.o
+
+ZookeeperUtil.i: ZookeeperUtil.cc.i
+
+.PHONY : ZookeeperUtil.i
+
+# target to preprocess a source file
+ZookeeperUtil.cc.i:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/ZookeeperUtil.cc.i
+.PHONY : ZookeeperUtil.cc.i
+
+ZookeeperUtil.s: ZookeeperUtil.cc.s
+
+.PHONY : ZookeeperUtil.s
+
+# target to generate assembly for a file
+ZookeeperUtil.cc.s:
+	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/ZookeeperUtil.cc.s
+.PHONY : ZookeeperUtil.cc.s
 
 rpc_header.pb.o: rpc_header.pb.cc.o
 
@@ -287,33 +287,6 @@ rpc_header.pb.cc.s:
 	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpc_header.pb.cc.s
 .PHONY : rpc_header.pb.cc.s
 
-zookeeper_util.o: zookeeper_util.cc.o
-
-.PHONY : zookeeper_util.o
-
-# target to build an object file
-zookeeper_util.cc.o:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeper_util.cc.o
-.PHONY : zookeeper_util.cc.o
-
-zookeeper_util.i: zookeeper_util.cc.i
-
-.PHONY : zookeeper_util.i
-
-# target to preprocess a source file
-zookeeper_util.cc.i:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeper_util.cc.i
-.PHONY : zookeeper_util.cc.i
-
-zookeeper_util.s: zookeeper_util.cc.s
-
-.PHONY : zookeeper_util.s
-
-# target to generate assembly for a file
-zookeeper_util.cc.s:
-	cd /home/shang/code/C++/github-project/student-work-project/tinyrpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeper_util.cc.s
-.PHONY : zookeeper_util.cc.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -323,27 +296,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... mprpc"
 	@echo "... edit_cache"
-	@echo "... mprpc_application.o"
-	@echo "... mprpc_application.i"
-	@echo "... mprpc_application.s"
-	@echo "... mprpc_channel.o"
-	@echo "... mprpc_channel.i"
-	@echo "... mprpc_channel.s"
-	@echo "... mprpc_config.o"
-	@echo "... mprpc_config.i"
-	@echo "... mprpc_config.s"
-	@echo "... mprpc_controller.o"
-	@echo "... mprpc_controller.i"
-	@echo "... mprpc_controller.s"
-	@echo "... mprpc_provider.o"
-	@echo "... mprpc_provider.i"
-	@echo "... mprpc_provider.s"
+	@echo "... MprpcApplication.o"
+	@echo "... MprpcApplication.i"
+	@echo "... MprpcApplication.s"
+	@echo "... MprpcChannel.o"
+	@echo "... MprpcChannel.i"
+	@echo "... MprpcChannel.s"
+	@echo "... MprpcController.o"
+	@echo "... MprpcController.i"
+	@echo "... MprpcController.s"
+	@echo "... MprpcProvider.o"
+	@echo "... MprpcProvider.i"
+	@echo "... MprpcProvider.s"
+	@echo "... ZookeeperUtil.o"
+	@echo "... ZookeeperUtil.i"
+	@echo "... ZookeeperUtil.s"
 	@echo "... rpc_header.pb.o"
 	@echo "... rpc_header.pb.i"
 	@echo "... rpc_header.pb.s"
-	@echo "... zookeeper_util.o"
-	@echo "... zookeeper_util.i"
-	@echo "... zookeeper_util.s"
 .PHONY : help
 
 

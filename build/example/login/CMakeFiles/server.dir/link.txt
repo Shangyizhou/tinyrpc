@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/server.dir/server.cc.o CMakeFiles/server.dir/__/user.pb.cc.o  -o ../../../bin/server  -L/home/shang/code/C++/github-project/student-work-project/tinyrpc/lib -Wl,-rpath,/home/shang/code/C++/github-project/student-work-project/tinyrpc/lib ../../../lib/libmprpc.a -lprotobuf -lmuduo_net -lmuduo_base -lpthread -lzookeeper_mt 

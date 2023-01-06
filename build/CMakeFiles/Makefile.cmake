@@ -14,8 +14,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
   "../example/CMakeLists.txt"
-  "../example/client/CMakeLists.txt"
-  "../example/server/CMakeLists.txt"
+  "../example/login/CMakeLists.txt"
   "../src/CMakeLists.txt"
   "/usr/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c"
@@ -116,13 +115,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "example/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "example/client/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "example/server/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "example/login/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/mprpc.dir/DependInfo.cmake"
-  "example/client/CMakeFiles/consumer.dir/DependInfo.cmake"
-  "example/server/CMakeFiles/provider.dir/DependInfo.cmake"
+  "example/login/CMakeFiles/client.dir/DependInfo.cmake"
+  "example/login/CMakeFiles/server.dir/DependInfo.cmake"
   )

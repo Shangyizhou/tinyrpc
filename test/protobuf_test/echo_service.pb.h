@@ -45,32 +45,24 @@ struct TableStruct_echo_5fservice_2eproto {
   static const uint32_t offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_echo_5fservice_2eproto;
-namespace fixbug {
-class AddRequest;
-struct AddRequestDefaultTypeInternal;
-extern AddRequestDefaultTypeInternal _AddRequest_default_instance_;
-class AddResponse;
-struct AddResponseDefaultTypeInternal;
-extern AddResponseDefaultTypeInternal _AddResponse_default_instance_;
+namespace echo {
 class EchoRequest;
 struct EchoRequestDefaultTypeInternal;
 extern EchoRequestDefaultTypeInternal _EchoRequest_default_instance_;
 class EchoResponse;
 struct EchoResponseDefaultTypeInternal;
 extern EchoResponseDefaultTypeInternal _EchoResponse_default_instance_;
-}  // namespace fixbug
+}  // namespace echo
 PROTOBUF_NAMESPACE_OPEN
-template<> ::fixbug::AddRequest* Arena::CreateMaybeMessage<::fixbug::AddRequest>(Arena*);
-template<> ::fixbug::AddResponse* Arena::CreateMaybeMessage<::fixbug::AddResponse>(Arena*);
-template<> ::fixbug::EchoRequest* Arena::CreateMaybeMessage<::fixbug::EchoRequest>(Arena*);
-template<> ::fixbug::EchoResponse* Arena::CreateMaybeMessage<::fixbug::EchoResponse>(Arena*);
+template<> ::echo::EchoRequest* Arena::CreateMaybeMessage<::echo::EchoRequest>(Arena*);
+template<> ::echo::EchoResponse* Arena::CreateMaybeMessage<::echo::EchoResponse>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
-namespace fixbug {
+namespace echo {
 
 // ===================================================================
 
 class EchoRequest final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fixbug.EchoRequest) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:echo.EchoRequest) */ {
  public:
   inline EchoRequest() : EchoRequest(nullptr) {}
   ~EchoRequest() override;
@@ -173,7 +165,7 @@ class EchoRequest final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fixbug.EchoRequest";
+    return "echo.EchoRequest";
   }
   protected:
   explicit EchoRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -206,7 +198,7 @@ class EchoRequest final :
   std::string* _internal_mutable_message();
   public:
 
-  // @@protoc_insertion_point(class_scope:fixbug.EchoRequest)
+  // @@protoc_insertion_point(class_scope:echo.EchoRequest)
  private:
   class _Internal;
 
@@ -223,7 +215,7 @@ class EchoRequest final :
 // -------------------------------------------------------------------
 
 class EchoResponse final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fixbug.EchoResponse) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:echo.EchoResponse) */ {
  public:
   inline EchoResponse() : EchoResponse(nullptr) {}
   ~EchoResponse() override;
@@ -326,7 +318,7 @@ class EchoResponse final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fixbug.EchoResponse";
+    return "echo.EchoResponse";
   }
   protected:
   explicit EchoResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -359,7 +351,7 @@ class EchoResponse final :
   std::string* _internal_mutable_message();
   public:
 
-  // @@protoc_insertion_point(class_scope:fixbug.EchoResponse)
+  // @@protoc_insertion_point(class_scope:echo.EchoResponse)
  private:
   class _Internal;
 
@@ -368,313 +360,6 @@ class EchoResponse final :
   typedef void DestructorSkippable_;
   struct Impl_ {
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr message_;
-    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  };
-  union { Impl_ _impl_; };
-  friend struct ::TableStruct_echo_5fservice_2eproto;
-};
-// -------------------------------------------------------------------
-
-class AddRequest final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fixbug.AddRequest) */ {
- public:
-  inline AddRequest() : AddRequest(nullptr) {}
-  ~AddRequest() override;
-  explicit PROTOBUF_CONSTEXPR AddRequest(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
-
-  AddRequest(const AddRequest& from);
-  AddRequest(AddRequest&& from) noexcept
-    : AddRequest() {
-    *this = ::std::move(from);
-  }
-
-  inline AddRequest& operator=(const AddRequest& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline AddRequest& operator=(AddRequest&& from) noexcept {
-    if (this == &from) return *this;
-    if (GetOwningArena() == from.GetOwningArena()
-  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
-        && GetOwningArena() != nullptr
-  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
-    ) {
-      InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return default_instance().GetMetadata().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return default_instance().GetMetadata().reflection;
-  }
-  static const AddRequest& default_instance() {
-    return *internal_default_instance();
-  }
-  static inline const AddRequest* internal_default_instance() {
-    return reinterpret_cast<const AddRequest*>(
-               &_AddRequest_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    2;
-
-  friend void swap(AddRequest& a, AddRequest& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(AddRequest* other) {
-    if (other == this) return;
-  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() != nullptr &&
-        GetOwningArena() == other->GetOwningArena()) {
-   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() == other->GetOwningArena()) {
-  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(AddRequest* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  AddRequest* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<AddRequest>(arena);
-  }
-  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const AddRequest& from);
-  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const AddRequest& from) {
-    AddRequest::MergeImpl(*this, from);
-  }
-  private:
-  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
-  public:
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  uint8_t* _InternalSerialize(
-      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
-
-  private:
-  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(AddRequest* other);
-
-  private:
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fixbug.AddRequest";
-  }
-  protected:
-  explicit AddRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                       bool is_message_owned = false);
-  public:
-
-  static const ClassData _class_data_;
-  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kAFieldNumber = 1,
-    kBFieldNumber = 2,
-  };
-  // int32 a = 1;
-  void clear_a();
-  int32_t a() const;
-  void set_a(int32_t value);
-  private:
-  int32_t _internal_a() const;
-  void _internal_set_a(int32_t value);
-  public:
-
-  // int32 b = 2;
-  void clear_b();
-  int32_t b() const;
-  void set_b(int32_t value);
-  private:
-  int32_t _internal_b() const;
-  void _internal_set_b(int32_t value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:fixbug.AddRequest)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  struct Impl_ {
-    int32_t a_;
-    int32_t b_;
-    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  };
-  union { Impl_ _impl_; };
-  friend struct ::TableStruct_echo_5fservice_2eproto;
-};
-// -------------------------------------------------------------------
-
-class AddResponse final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fixbug.AddResponse) */ {
- public:
-  inline AddResponse() : AddResponse(nullptr) {}
-  ~AddResponse() override;
-  explicit PROTOBUF_CONSTEXPR AddResponse(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
-
-  AddResponse(const AddResponse& from);
-  AddResponse(AddResponse&& from) noexcept
-    : AddResponse() {
-    *this = ::std::move(from);
-  }
-
-  inline AddResponse& operator=(const AddResponse& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline AddResponse& operator=(AddResponse&& from) noexcept {
-    if (this == &from) return *this;
-    if (GetOwningArena() == from.GetOwningArena()
-  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
-        && GetOwningArena() != nullptr
-  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
-    ) {
-      InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return default_instance().GetMetadata().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return default_instance().GetMetadata().reflection;
-  }
-  static const AddResponse& default_instance() {
-    return *internal_default_instance();
-  }
-  static inline const AddResponse* internal_default_instance() {
-    return reinterpret_cast<const AddResponse*>(
-               &_AddResponse_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    3;
-
-  friend void swap(AddResponse& a, AddResponse& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(AddResponse* other) {
-    if (other == this) return;
-  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() != nullptr &&
-        GetOwningArena() == other->GetOwningArena()) {
-   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
-    if (GetOwningArena() == other->GetOwningArena()) {
-  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(AddResponse* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  AddResponse* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<AddResponse>(arena);
-  }
-  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const AddResponse& from);
-  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const AddResponse& from) {
-    AddResponse::MergeImpl(*this, from);
-  }
-  private:
-  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
-  public:
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  uint8_t* _InternalSerialize(
-      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
-
-  private:
-  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(AddResponse* other);
-
-  private:
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fixbug.AddResponse";
-  }
-  protected:
-  explicit AddResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                       bool is_message_owned = false);
-  public:
-
-  static const ClassData _class_data_;
-  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kResultFieldNumber = 1,
-  };
-  // int32 result = 1;
-  void clear_result();
-  int32_t result() const;
-  void set_result(int32_t value);
-  private:
-  int32_t _internal_result() const;
-  void _internal_set_result(int32_t value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:fixbug.AddResponse)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  struct Impl_ {
-    int32_t result_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
   union { Impl_ _impl_; };
@@ -696,12 +381,8 @@ class EchoService : public ::PROTOBUF_NAMESPACE_ID::Service {
   static const ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor* descriptor();
 
   virtual void Echo(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                       const ::fixbug::EchoRequest* request,
-                       ::fixbug::EchoResponse* response,
-                       ::google::protobuf::Closure* done);
-  virtual void Add(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                       const ::fixbug::AddRequest* request,
-                       ::fixbug::AddResponse* response,
+                       const ::echo::EchoRequest* request,
+                       ::echo::EchoResponse* response,
                        ::google::protobuf::Closure* done);
 
   // implements Service ----------------------------------------------
@@ -733,12 +414,8 @@ class EchoService_Stub : public EchoService {
   // implements EchoService ------------------------------------------
 
   void Echo(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                       const ::fixbug::EchoRequest* request,
-                       ::fixbug::EchoResponse* response,
-                       ::google::protobuf::Closure* done);
-  void Add(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                       const ::fixbug::AddRequest* request,
-                       ::fixbug::AddResponse* response,
+                       const ::echo::EchoRequest* request,
+                       ::echo::EchoResponse* response,
                        ::google::protobuf::Closure* done);
  private:
   ::PROTOBUF_NAMESPACE_ID::RpcChannel* channel_;
@@ -763,7 +440,7 @@ inline void EchoRequest::clear_message() {
   _impl_.message_.ClearToEmpty();
 }
 inline const std::string& EchoRequest::message() const {
-  // @@protoc_insertion_point(field_get:fixbug.EchoRequest.message)
+  // @@protoc_insertion_point(field_get:echo.EchoRequest.message)
   return _internal_message();
 }
 template <typename ArgT0, typename... ArgT>
@@ -771,11 +448,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void EchoRequest::set_message(ArgT0&& arg0, ArgT... args) {
  
  _impl_.message_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:fixbug.EchoRequest.message)
+  // @@protoc_insertion_point(field_set:echo.EchoRequest.message)
 }
 inline std::string* EchoRequest::mutable_message() {
   std::string* _s = _internal_mutable_message();
-  // @@protoc_insertion_point(field_mutable:fixbug.EchoRequest.message)
+  // @@protoc_insertion_point(field_mutable:echo.EchoRequest.message)
   return _s;
 }
 inline const std::string& EchoRequest::_internal_message() const {
@@ -790,7 +467,7 @@ inline std::string* EchoRequest::_internal_mutable_message() {
   return _impl_.message_.Mutable(GetArenaForAllocation());
 }
 inline std::string* EchoRequest::release_message() {
-  // @@protoc_insertion_point(field_release:fixbug.EchoRequest.message)
+  // @@protoc_insertion_point(field_release:echo.EchoRequest.message)
   return _impl_.message_.Release();
 }
 inline void EchoRequest::set_allocated_message(std::string* message) {
@@ -805,7 +482,7 @@ inline void EchoRequest::set_allocated_message(std::string* message) {
     _impl_.message_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:fixbug.EchoRequest.message)
+  // @@protoc_insertion_point(field_set_allocated:echo.EchoRequest.message)
 }
 
 // -------------------------------------------------------------------
@@ -817,7 +494,7 @@ inline void EchoResponse::clear_message() {
   _impl_.message_.ClearToEmpty();
 }
 inline const std::string& EchoResponse::message() const {
-  // @@protoc_insertion_point(field_get:fixbug.EchoResponse.message)
+  // @@protoc_insertion_point(field_get:echo.EchoResponse.message)
   return _internal_message();
 }
 template <typename ArgT0, typename... ArgT>
@@ -825,11 +502,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void EchoResponse::set_message(ArgT0&& arg0, ArgT... args) {
  
  _impl_.message_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:fixbug.EchoResponse.message)
+  // @@protoc_insertion_point(field_set:echo.EchoResponse.message)
 }
 inline std::string* EchoResponse::mutable_message() {
   std::string* _s = _internal_mutable_message();
-  // @@protoc_insertion_point(field_mutable:fixbug.EchoResponse.message)
+  // @@protoc_insertion_point(field_mutable:echo.EchoResponse.message)
   return _s;
 }
 inline const std::string& EchoResponse::_internal_message() const {
@@ -844,7 +521,7 @@ inline std::string* EchoResponse::_internal_mutable_message() {
   return _impl_.message_.Mutable(GetArenaForAllocation());
 }
 inline std::string* EchoResponse::release_message() {
-  // @@protoc_insertion_point(field_release:fixbug.EchoResponse.message)
+  // @@protoc_insertion_point(field_release:echo.EchoResponse.message)
   return _impl_.message_.Release();
 }
 inline void EchoResponse::set_allocated_message(std::string* message) {
@@ -859,75 +536,7 @@ inline void EchoResponse::set_allocated_message(std::string* message) {
     _impl_.message_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:fixbug.EchoResponse.message)
-}
-
-// -------------------------------------------------------------------
-
-// AddRequest
-
-// int32 a = 1;
-inline void AddRequest::clear_a() {
-  _impl_.a_ = 0;
-}
-inline int32_t AddRequest::_internal_a() const {
-  return _impl_.a_;
-}
-inline int32_t AddRequest::a() const {
-  // @@protoc_insertion_point(field_get:fixbug.AddRequest.a)
-  return _internal_a();
-}
-inline void AddRequest::_internal_set_a(int32_t value) {
-  
-  _impl_.a_ = value;
-}
-inline void AddRequest::set_a(int32_t value) {
-  _internal_set_a(value);
-  // @@protoc_insertion_point(field_set:fixbug.AddRequest.a)
-}
-
-// int32 b = 2;
-inline void AddRequest::clear_b() {
-  _impl_.b_ = 0;
-}
-inline int32_t AddRequest::_internal_b() const {
-  return _impl_.b_;
-}
-inline int32_t AddRequest::b() const {
-  // @@protoc_insertion_point(field_get:fixbug.AddRequest.b)
-  return _internal_b();
-}
-inline void AddRequest::_internal_set_b(int32_t value) {
-  
-  _impl_.b_ = value;
-}
-inline void AddRequest::set_b(int32_t value) {
-  _internal_set_b(value);
-  // @@protoc_insertion_point(field_set:fixbug.AddRequest.b)
-}
-
-// -------------------------------------------------------------------
-
-// AddResponse
-
-// int32 result = 1;
-inline void AddResponse::clear_result() {
-  _impl_.result_ = 0;
-}
-inline int32_t AddResponse::_internal_result() const {
-  return _impl_.result_;
-}
-inline int32_t AddResponse::result() const {
-  // @@protoc_insertion_point(field_get:fixbug.AddResponse.result)
-  return _internal_result();
-}
-inline void AddResponse::_internal_set_result(int32_t value) {
-  
-  _impl_.result_ = value;
-}
-inline void AddResponse::set_result(int32_t value) {
-  _internal_set_result(value);
-  // @@protoc_insertion_point(field_set:fixbug.AddResponse.result)
+  // @@protoc_insertion_point(field_set_allocated:echo.EchoResponse.message)
 }
 
 #ifdef __GNUC__
@@ -935,14 +544,10 @@ inline void AddResponse::set_result(int32_t value) {
 #endif  // __GNUC__
 // -------------------------------------------------------------------
 
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
 
 // @@protoc_insertion_point(namespace_scope)
 
-}  // namespace fixbug
+}  // namespace echo
 
 // @@protoc_insertion_point(global_scope)
 

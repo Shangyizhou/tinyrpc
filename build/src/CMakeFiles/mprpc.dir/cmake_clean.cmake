@@ -1,11 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mprpc.dir/mprpc_application.cc.o"
-  "CMakeFiles/mprpc.dir/mprpc_config.cc.o"
-  "CMakeFiles/mprpc.dir/mprpc_provider.cc.o"
+  "CMakeFiles/mprpc.dir/MprpcApplication.cc.o"
+  "CMakeFiles/mprpc.dir/MprpcProvider.cc.o"
   "CMakeFiles/mprpc.dir/rpc_header.pb.cc.o"
-  "CMakeFiles/mprpc.dir/mprpc_channel.cc.o"
-  "CMakeFiles/mprpc.dir/mprpc_controller.cc.o"
-  "CMakeFiles/mprpc.dir/zookeeper_util.cc.o"
+  "CMakeFiles/mprpc.dir/MprpcChannel.cc.o"
+  "CMakeFiles/mprpc.dir/MprpcController.cc.o"
+  "CMakeFiles/mprpc.dir/ZookeeperUtil.cc.o"
   "../../lib/libmprpc.pdb"
   "../../lib/libmprpc.a"
 )

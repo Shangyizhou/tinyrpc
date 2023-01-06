@@ -1,12 +1,13 @@
 set(SRC_LIST
-    mprpc_application.cc
-    mprpc_config.cc
-    mprpc_provider.cc
+    MprpcApplication.cc
+    MprpcProvider.cc
     rpc_header.pb.cc
-    mprpc_channel.cc
-    mprpc_controller.cc
-    zookeeper_util.cc
+    MprpcChannel.cc
+    MprpcController.cc
+    ZookeeperUtil.cc
     )
 aux_source_directory(mprpc SRC_LIST)
+# 生成静态库
 add_library(mprpc ${SRC_LIST})
+# 目标需要链接的库
 target_link_libraries(mprpc muduo_net muduo_base pthread zookeeper_mt)

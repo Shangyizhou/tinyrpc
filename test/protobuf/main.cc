@@ -10,7 +10,7 @@ int main()
     // rc->set_errcode(1);
     // rc->set_errmsg("Login failed");
 
-    GetFriendListRequestResponse rsp;
+    GetFriendListsResponse rsp;
     ResultCode *rc = rsp.mutable_result();
     rc->set_errcode(0);
     

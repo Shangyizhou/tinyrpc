@@ -84,7 +84,7 @@ src/preinstall:
 src/CMakeFiles/mprpc.dir/all:
 	$(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/depend
 	$(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11 "Built target mprpc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles --progress-num=4,5,6,7,8,9,10 "Built target mprpc"
 .PHONY : src/CMakeFiles/mprpc.dir/all
 
 # Include target in all.
@@ -94,7 +94,7 @@ all: src/CMakeFiles/mprpc.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/mprpc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mprpc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/mprpc.dir/rule
@@ -118,130 +118,111 @@ clean: src/CMakeFiles/mprpc.dir/clean
 # Directory level rules for directory example
 
 # Convenience name for "all" pass in the directory.
-example/all: example/client/all
-example/all: example/server/all
+example/all: example/login/all
 
 .PHONY : example/all
 
 # Convenience name for "clean" pass in the directory.
-example/clean: example/client/clean
-example/clean: example/server/clean
+example/clean: example/login/clean
 
 .PHONY : example/clean
 
 # Convenience name for "preinstall" pass in the directory.
-example/preinstall: example/client/preinstall
-example/preinstall: example/server/preinstall
+example/preinstall: example/login/preinstall
 
 .PHONY : example/preinstall
 
 #=============================================================================
-# Directory level rules for directory example/client
+# Directory level rules for directory example/login
 
 # Convenience name for "all" pass in the directory.
-example/client/all: example/client/CMakeFiles/consumer.dir/all
+example/login/all: example/login/CMakeFiles/client.dir/all
+example/login/all: example/login/CMakeFiles/server.dir/all
 
-.PHONY : example/client/all
+.PHONY : example/login/all
 
 # Convenience name for "clean" pass in the directory.
-example/client/clean: example/client/CMakeFiles/consumer.dir/clean
+example/login/clean: example/login/CMakeFiles/client.dir/clean
+example/login/clean: example/login/CMakeFiles/server.dir/clean
 
-.PHONY : example/client/clean
+.PHONY : example/login/clean
 
 # Convenience name for "preinstall" pass in the directory.
-example/client/preinstall:
+example/login/preinstall:
 
-.PHONY : example/client/preinstall
+.PHONY : example/login/preinstall
 
 #=============================================================================
-# Target rules for target example/client/CMakeFiles/consumer.dir
+# Target rules for target example/login/CMakeFiles/client.dir
 
 # All Build rule for target.
-example/client/CMakeFiles/consumer.dir/all: src/CMakeFiles/mprpc.dir/all
-	$(MAKE) -f example/client/CMakeFiles/consumer.dir/build.make example/client/CMakeFiles/consumer.dir/depend
-	$(MAKE) -f example/client/CMakeFiles/consumer.dir/build.make example/client/CMakeFiles/consumer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles --progress-num=1,2,3 "Built target consumer"
-.PHONY : example/client/CMakeFiles/consumer.dir/all
+example/login/CMakeFiles/client.dir/all: src/CMakeFiles/mprpc.dir/all
+	$(MAKE) -f example/login/CMakeFiles/client.dir/build.make example/login/CMakeFiles/client.dir/depend
+	$(MAKE) -f example/login/CMakeFiles/client.dir/build.make example/login/CMakeFiles/client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles --progress-num=1,2,3 "Built target client"
+.PHONY : example/login/CMakeFiles/client.dir/all
 
 # Include target in all.
-all: example/client/CMakeFiles/consumer.dir/all
+all: example/login/CMakeFiles/client.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-example/client/CMakeFiles/consumer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles 11
-	$(MAKE) -f CMakeFiles/Makefile2 example/client/CMakeFiles/consumer.dir/all
+example/login/CMakeFiles/client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 example/login/CMakeFiles/client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles 0
-.PHONY : example/client/CMakeFiles/consumer.dir/rule
+.PHONY : example/login/CMakeFiles/client.dir/rule
 
 # Convenience name for target.
-consumer: example/client/CMakeFiles/consumer.dir/rule
+client: example/login/CMakeFiles/client.dir/rule
 
-.PHONY : consumer
-
-# clean rule for target.
-example/client/CMakeFiles/consumer.dir/clean:
-	$(MAKE) -f example/client/CMakeFiles/consumer.dir/build.make example/client/CMakeFiles/consumer.dir/clean
-.PHONY : example/client/CMakeFiles/consumer.dir/clean
+.PHONY : client
 
 # clean rule for target.
-clean: example/client/CMakeFiles/consumer.dir/clean
+example/login/CMakeFiles/client.dir/clean:
+	$(MAKE) -f example/login/CMakeFiles/client.dir/build.make example/login/CMakeFiles/client.dir/clean
+.PHONY : example/login/CMakeFiles/client.dir/clean
+
+# clean rule for target.
+clean: example/login/CMakeFiles/client.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory example/server
-
-# Convenience name for "all" pass in the directory.
-example/server/all: example/server/CMakeFiles/provider.dir/all
-
-.PHONY : example/server/all
-
-# Convenience name for "clean" pass in the directory.
-example/server/clean: example/server/CMakeFiles/provider.dir/clean
-
-.PHONY : example/server/clean
-
-# Convenience name for "preinstall" pass in the directory.
-example/server/preinstall:
-
-.PHONY : example/server/preinstall
-
-#=============================================================================
-# Target rules for target example/server/CMakeFiles/provider.dir
+# Target rules for target example/login/CMakeFiles/server.dir
 
 # All Build rule for target.
-example/server/CMakeFiles/provider.dir/all: src/CMakeFiles/mprpc.dir/all
-	$(MAKE) -f example/server/CMakeFiles/provider.dir/build.make example/server/CMakeFiles/provider.dir/depend
-	$(MAKE) -f example/server/CMakeFiles/provider.dir/build.make example/server/CMakeFiles/provider.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles --progress-num=12,13,14 "Built target provider"
-.PHONY : example/server/CMakeFiles/provider.dir/all
+example/login/CMakeFiles/server.dir/all: src/CMakeFiles/mprpc.dir/all
+	$(MAKE) -f example/login/CMakeFiles/server.dir/build.make example/login/CMakeFiles/server.dir/depend
+	$(MAKE) -f example/login/CMakeFiles/server.dir/build.make example/login/CMakeFiles/server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles --progress-num=11,12,13 "Built target server"
+.PHONY : example/login/CMakeFiles/server.dir/all
 
 # Include target in all.
-all: example/server/CMakeFiles/provider.dir/all
+all: example/login/CMakeFiles/server.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-example/server/CMakeFiles/provider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles 11
-	$(MAKE) -f CMakeFiles/Makefile2 example/server/CMakeFiles/provider.dir/all
+example/login/CMakeFiles/server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 example/login/CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/code/C++/github-project/student-work-project/tinyrpc/build/CMakeFiles 0
-.PHONY : example/server/CMakeFiles/provider.dir/rule
+.PHONY : example/login/CMakeFiles/server.dir/rule
 
 # Convenience name for target.
-provider: example/server/CMakeFiles/provider.dir/rule
+server: example/login/CMakeFiles/server.dir/rule
 
-.PHONY : provider
-
-# clean rule for target.
-example/server/CMakeFiles/provider.dir/clean:
-	$(MAKE) -f example/server/CMakeFiles/provider.dir/build.make example/server/CMakeFiles/provider.dir/clean
-.PHONY : example/server/CMakeFiles/provider.dir/clean
+.PHONY : server
 
 # clean rule for target.
-clean: example/server/CMakeFiles/provider.dir/clean
+example/login/CMakeFiles/server.dir/clean:
+	$(MAKE) -f example/login/CMakeFiles/server.dir/build.make example/login/CMakeFiles/server.dir/clean
+.PHONY : example/login/CMakeFiles/server.dir/clean
+
+# clean rule for target.
+clean: example/login/CMakeFiles/server.dir/clean
 
 .PHONY : clean
 
